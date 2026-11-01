@@ -267,3 +267,16 @@ table.specs td{overflow-wrap:anywhere}
   .searchbar label{border:1px solid var(--line);border-radius:6px;background:var(--cream);padding:8px 12px}
   .searchbar .btn{grid-column:auto}
 }
+/* Agents page */
+.agents{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
+.agent-card{background:var(--paper);border:1px solid var(--line);border-radius:10px;overflow:hidden;display:flex;flex-direction:column}
+.agent-photo{position:relative;aspect-ratio:4/5;background:var(--sage-soft)}
+.agent-initials{position:absolute;inset:0;display:grid;place-content:center;justify-items:center;gap:6px;background:linear-gradient(160deg,var(--sage-soft),#d6dcc2)}
+.agent-initials span{font-family:var(--display);font-size:5rem;font-weight:600;color:var(--forest);line-height:1}
+.agent-initials small{font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.agent-body{padding:20px;display:grid;gap:10px;flex:1;align-content:start}
+.agent-body h2{font-size:1.9rem}
+.agent-body p{margin:0;color:var(--muted)}
+.agent-contact{display:grid;gap:2px;font-size:.93rem;font-weight:600;overflow-wrap:anywhere}
+.agent-contact a{text-decoration:none}
+.agent-body .btn{margin-top:auto;justify-self:start}

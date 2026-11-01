@@ -16,7 +16,7 @@ export default function Footer() {
             <ul>
               <li><Link href="/search">Search homes</Link></li>
               <li><Link href="/sell">Home valuation</Link></li>
-              <li><Link href="/about">About Michele</Link></li>
+              <li><Link href="/agents">Our agents</Link></li>
               <li><Link href="/contact">Contact</Link></li>
             </ul>
           </div>

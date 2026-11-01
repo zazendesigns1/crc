@@ -8,7 +8,7 @@ const NAV = [
   { href: "/", label: "Home" },
   { href: "/search", label: "Search Homes" },
   { href: "/sell", label: "Sell" },
-  { href: "/about", label: "About" },
+  { href: "/agents", label: "Agents" },
 ];
 
 export default function Header() {
@@ -34,7 +34,7 @@ export default function Header() {
             {NAV.map((n) => (
               <Link key={n.href} href={n.href} className={isOn(n.href) ? "on" : ""}>{n.label}</Link>
             ))}
-            <Link href="/contact" className="cta">Contact Michele</Link>
+            <Link href="/contact" className="cta">Contact Us</Link>
           </nav>
         </div>
       </header>
