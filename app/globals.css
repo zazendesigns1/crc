@@ -657,3 +657,10 @@ body{background:var(--paper)}
 .search-layout{padding-top:56px}
 .crumbs{padding-top:40px}
 @media (max-width:700px){.search-layout{padding-top:32px}.crumbs{padding-top:24px}}
+/* Consistent space under the nav on title-bar pages; tighter gap from title to content */
+.page-head{padding:80px 0 40px}
+.page-head + section.band,.page-head + .band{padding-top:32px}
+.process{padding-top:32px!important}
+@media (max-width:700px){.page-head{padding:44px 0 28px}}
+@media (min-width:921px){.search-layout{column-gap:48px}}
+.chip{font-weight:400}.chip[aria-pressed="true"]{font-weight:500}.ours-check{font-weight:400}.seg button{font-weight:500}.sort{font-weight:400}
