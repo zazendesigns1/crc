@@ -507,3 +507,7 @@ footer.site img.footer-mark{height:96px;width:auto}
 footer.site{margin-top:-28px;position:relative;z-index:1}
 @media (max-width:600px){footer.site{margin-top:-20px}}
 .ours-check{display:flex;gap:10px;align-items:center;font-weight:600;font-size:.92rem;line-height:1.25;cursor:pointer}.ours-check input{flex:none;width:18px;height:18px}
+/* Generous breathing room before the footer on every page (footer overlaps by 28px) */
+main > :last-child{padding-bottom:128px!important}
+@media (max-width:700px){main > :last-child{padding-bottom:96px!important}}
+.detail{padding-bottom:0}
