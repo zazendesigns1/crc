@@ -493,3 +493,7 @@ footer.site img.footer-mark{height:96px;width:auto}
 /* Eyebrow spacing above headings */
 .section-head .eyebrow,.panel .eyebrow,.prose .eyebrow,.page-head .eyebrow{margin-bottom:8px}
 @media (max-width:700px){.section-head .eyebrow,.panel .eyebrow,.prose .eyebrow,.page-head .eyebrow{margin-bottom:12px}}
+/* Listing header spacing */
+.d-price{margin-top:22px}
+.d-head h1{margin-top:10px}
+.d-head .addr{margin-top:4px}

@@ -42,7 +42,7 @@ export default async function ListingPage({ params }: Props) {
                 {l.ours && <span className="ours" style={{ position: "static" }}>CRG Listing</span>}
                 <span className="small">{l.dom} day{l.dom === 1 ? "" : "s"} on market</span>
               </div>
-              <div className="price num" style={{ marginTop: 10 }}>{money(l.price)}</div>
+              <div className="price num d-price">{money(l.price)}</div>
               <h1>{l.addr}</h1>
               <div className="addr">{l.town}, NY {l.zip}</div>
             </div>
