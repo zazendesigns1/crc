@@ -24,7 +24,7 @@ img{max-width:100%;display:block}
 a{color:var(--forest)}
 button,input,select,textarea{font:inherit;color:inherit}
 :focus-visible{outline:2px solid var(--gold);outline-offset:2px}
-h1,h2,h3{font-family:var(--display);font-weight:750;letter-spacing:-.025em;color:var(--forest);text-wrap:balance;line-height:1.1;margin:0}
+h1,h2,h3{font-family:var(--display);font-weight:600;letter-spacing:-.02em;color:var(--forest);text-wrap:balance;line-height:1.1;margin:0}
 .wrap{max-width:1180px;margin:0 auto;padding:0 20px}
 .eyebrow{font-family:var(--caps);letter-spacing:.18em;font-size:.74rem;color:var(--gold);text-transform:uppercase}
 .rule{display:flex;align-items:center;gap:14px}
@@ -354,11 +354,11 @@ footer.site{border-radius:28px 28px 0 0}
 /* Scoutie Sans: weight contrast */
 body{font-weight:400}
 .eyebrow,.agent-title{font-weight:650;letter-spacing:.14em}
-.price,.calc-out,.stats b,.keyfacts b{font-weight:750;letter-spacing:-.02em}
+.price,.calc-out,.stats b,.keyfacts b{font-weight:600;letter-spacing:-.02em}
 .page-head p,.section-head p,.hero p.lede,.path-body p,.agent-bio,.step p,.town span{font-weight:350}
 .quote{font-weight:350;letter-spacing:-.01em}
 .brand span{font-weight:700;letter-spacing:.06em}
-.msg-name{font-weight:750}
+.msg-name{font-weight:600}
 /* Contact page: one simple card on a soft gradient */
 .contact-wrap{background:linear-gradient(110deg,#e9ede0 0%,#f4f1e6 50%,#f6ecd8 100%);padding:72px 0 96px}
 .contact-card{max-width:760px;background:rgba(255,253,247,.72);border-radius:14px;padding:56px clamp(24px,6vw,64px);display:grid;gap:34px}
