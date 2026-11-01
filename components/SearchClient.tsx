@@ -27,6 +27,8 @@ export default function SearchClient({ listings }: { listings: Listing[] }) {
   const [sort, setSort] = useState<Sort>("new");
   const [mode, setMode] = useState<"grid" | "map">("grid");
   const [hot, setHot] = useState<string | null>(null);
+  const [showFilters, setShowFilters] = useState(false);
+  const activeCount = [town, min !== "0", max, beds, baths, types.length, acres !== "0", kw, ours].filter(Boolean).length;
 
   const reset = () => {
     setTown(""); setMin("0"); setMax(""); setBeds(0); setBaths(0); setTypes([]); setAcres("0"); setKw(""); setOurs(false);
@@ -65,7 +67,7 @@ export default function SearchClient({ listings }: { listings: Listing[] }) {
 
   return (
     <div className="wrap search-layout">
-      <form className="filters" onSubmit={(e) => e.preventDefault()}>
+      <form className={`filters${showFilters ? " open" : ""}`} id="filters" onSubmit={(e) => e.preventDefault()}>
         <h3>Filter homes</h3>
         <div className="field">
           <label htmlFor="fTown">Town</label>
@@ -110,12 +112,17 @@ export default function SearchClient({ listings }: { listings: Listing[] }) {
           <input type="checkbox" checked={ours} onChange={(e) => setOurs(e.target.checked)} /> Only Charlotte Realty Group listings
         </label>
         <button className="btn ghost" type="button" onClick={reset}>Clear filters</button>
+        <button className="btn filters-done" type="button" onClick={() => setShowFilters(false)}>Show {results.length} home{results.length === 1 ? "" : "s"}</button>
       </form>
 
       <div>
         <div className="results-bar">
           <h2>{results.length} home{results.length === 1 ? "" : "s"} for sale</h2>
-          <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
+          <div className="results-tools">
+            <button type="button" className="btn ghost filter-toggle" aria-expanded={showFilters} aria-controls="filters" style={{ padding: "8px 14px" }}
+              onClick={() => { setShowFilters((o) => !o); if (!showFilters) window.scrollTo({ top: 0, behavior: "smooth" }); }}>
+              {showFilters ? "Hide filters" : `Filters${activeCount ? ` (${activeCount})` : ""}`}
+            </button>
             <select className="sort" aria-label="Sort listings" value={sort} onChange={(e) => setSort(e.target.value as Sort)}>
               <option value="new">Newest</option><option value="plow">Price: low to high</option><option value="phigh">Price: high to low</option><option value="acres">Most acreage</option><option value="sqft">Largest home</option>
             </select>

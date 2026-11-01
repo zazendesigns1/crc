@@ -19,7 +19,9 @@ export default function Header() {
   return (
     <>
       <div className="sample">
-        <b>Design preview:</b> the listings shown are sample data. Live MLS listings will appear here once Charlotte Realty Group&apos;s IDX feed is connected.
+        <b>Design preview:</b>{" "}
+        <span className="long">the listings shown are sample data. Live MLS listings will appear here once Charlotte Realty Group&apos;s IDX feed is connected.</span>
+        <span className="short">sample listings until the MLS feed is connected.</span>
       </div>
       <header className="site">
         <div className="wrap nav">

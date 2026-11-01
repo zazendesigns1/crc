@@ -222,3 +222,42 @@ footer.site ul{list-style:none;padding:0;margin:0;display:grid;gap:6px;font-size
 /* Custom select arrow: sits 14px in from the edge on every dropdown */
 select{-webkit-appearance:none;-moz-appearance:none;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1.5l5 5 5-5' fill='none' stroke='%2324401f' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")!important;background-repeat:no-repeat!important;background-position:right 14px center!important;background-size:12px 8px!important;padding-right:38px!important;cursor:pointer}
 .searchbar select{background-position:right 4px center!important;padding-right:26px!important}
+
+/* ---- Mobile polish ---- */
+.search-layout{padding-left:20px;padding-right:20px}
+.filter-toggle{display:none}
+.filters-done{display:none}
+@media (max-width:920px){
+  .filters{display:none}
+  .filters.open{display:grid}
+  .filter-toggle{display:inline-flex}
+  .filters-done{display:inline-flex}
+}
+.eyebrow .seg-txt{white-space:nowrap}
+.map-note{position:static;display:block;background:none;padding:8px 12px;border-top:1px solid var(--line)}
+.keyfacts{display:flex;flex-wrap:wrap;gap:1px;background:var(--line);overflow:hidden}
+.keyfacts div{flex:1 1 100px;border-right:0;background:var(--paper)}
+table.specs td{overflow-wrap:anywhere}
+.sample .long{display:inline}
+.sample .short{display:none}
+@media (max-width:600px){
+  .sample .long{display:none}
+  .sample .short{display:inline}
+  table.specs th{width:40%}
+  .results-bar h2{font-size:1.5rem}
+  .d-head .price{font-size:2.1rem}
+}
+.results-tools{display:flex;gap:8px;flex-wrap:wrap}
+@media (max-width:600px){
+  .results-tools{width:100%;flex-wrap:nowrap;gap:6px}
+  .results-tools .sort{flex:1;min-width:0}
+  .seg button{padding:8px 11px}
+}
+.search-layout > div{min-width:0}
+@media (max-width:920px){.search-layout{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:600px){.results-tools .sort{flex:1 1 0;width:0}}
+@media (max-width:400px){
+  .results-tools .sort{padding-left:10px;padding-right:28px!important;background-position:right 10px center!important}
+  .results-tools .filter-toggle{padding:8px 10px!important}
+  .seg button{padding:8px 9px}
+}

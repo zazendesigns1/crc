@@ -13,7 +13,7 @@ export default function Home() {
         <div className="bg"><Image src={PLACEHOLDER_PHOTO} alt="" fill priority sizes="100vw" style={{ objectFit: "cover", objectPosition: "70% 50%" }} /></div>
         <div className="wrap">
           <div className="hero-inner">
-            <div className="eyebrow">Washington County · Battenkill Valley · Upstate New York</div>
+            <div className="eyebrow"><span className="seg-txt">Washington County ·</span> <span className="seg-txt">Battenkill Valley ·</span> <span className="seg-txt">Upstate New York</span></div>
             <h1>Find your place in the country.</h1>
             <p className="lede">Farmhouses, acreage and village homes along the Battenkill, with a local broker who knows every back road.</p>
             <HeroSearch />
