@@ -11,7 +11,8 @@ export default function Contact() {
     <section className="contact-wrap">
       <div className="wrap">
         <div className="contact-card">
-          <h1>Contact Charlotte Realty Group</h1>
+          <div className="eyebrow">Contact</div>
+          <h1 className="contact-h1">Charlotte Realty Group</h1>
           <div className="c-block">
             <h2>Get in touch?</h2>
             <p>Contact the team that can help you best with your question.</p>
