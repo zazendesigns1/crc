@@ -52,17 +52,12 @@ function CloseArt() {
 }
 
 const STEPS = [
-  { title: "Property Assessment", text: "A walk-through and written analysis to set the right price for your home or land.", points: ["Comparable sales from your town", "Land, wells, septic and outbuildings noted", "A clear, honest pricing range"], art: <AssessArt />, bg: "#e6e9d9", tone: "sage" },
-  { title: "Custom Marketing", text: "A plan built around what makes your place special, from the barn to the view.", points: ["Professional photos and video", "Full MLS exposure across the region", "Featured on this site and social"], art: <MarketArt />, bg: "#efe7d2", tone: "gold" },
-  { title: "Closing & Beyond", text: "Weekly updates on showings, feedback and offers, then a smooth path to the closing table.", points: ["Offer review and negotiation", "Inspections and appraisal handled", "On hand after closing, too"], art: <CloseArt />, bg: "#dfe5d8", tone: "coral" },
+  { title: "Pricing Your Home", text: "We walk the property with you, then put together a written market analysis so you can list with confidence.", points: ["Recent sales from your town and nearby", "Land, outbuildings and updates accounted for", "A pricing range you can understand"], art: <AssessArt />, bg: "#e6e9d9", tone: "sage" },
+  { title: "Getting It Seen", text: "Your listing goes on the MLS, out to buyer agents across the region, and in front of buyers searching online.", points: ["Professional listing photos", "Syndicated to the major home search sites", "Featured on our site and social media"], art: <MarketArt />, bg: "#efe7d2", tone: "gold" },
+  { title: "Offer to Closing", text: "We review every offer with you, negotiate on your behalf, and keep the sale moving through to closing day.", points: ["Showing feedback after every visit", "Inspection and appraisal coordinated", "Regular updates until the keys change hands"], art: <CloseArt />, bg: "#dfe5d8", tone: "coral" },
 ];
 
-const SERVICES = [
-  ["Professional photography.", "Your home shown in its best light, inside and out."],
-  ["Drone and video tours.", "Acreage, views and road frontage, seen from above."],
-  ["Private showings.", "Scheduled around your life and handled personally."],
-  ["Weekly reporting.", "Who came, what they said, and what happens next."],
-];
+
 
 const Check = () => (
   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" /></svg>
@@ -75,7 +70,7 @@ export default function SellSections() {
         <div className="wrap">
           <div className="process-head">
             <h2>Our Selling Process</h2>
-            <p>Simple, personal, and built for country property.</p>
+            <p>Three stages, one local team, start to finish.</p>
           </div>
           <div className="process-grid">
             {STEPS.map((s) => (
@@ -90,17 +85,6 @@ export default function SellSections() {
         </div>
       </section>
 
-      <section className="band services">
-        <div className="wrap services-grid">
-          <div className="services-lead">
-            <h2>What You Need, When You Need It</h2>
-            <a className="btn accent" href="#valuation">Request a valuation</a>
-          </div>
-          <ul className="services-list">
-            {SERVICES.map(([b, t]) => <li key={b}><strong>{b}</strong> {t}</li>)}
-          </ul>
-        </div>
-      </section>
     </>
   );
 }
