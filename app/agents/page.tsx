@@ -9,37 +9,44 @@ export const metadata: Metadata = {
   description: "Meet the agents of Charlotte Realty Group, a boutique brokerage serving Washington County and the Battenkill Valley.",
 };
 
+const PhoneIcon = () => (
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z" /></svg>
+);
+const MailIcon = () => (
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" /><path d="m2 6 10 7 10-7" /></svg>
+);
+
 export default function Agents() {
   return (
     <>
-      <div className="page-head"><div className="wrap">
-        <div className="eyebrow">Our agents</div>
-        <h1>Local agents who know every back road</h1>
-        <p>Charlotte Realty Group is a small, independent brokerage. Every client works directly with one of our three agents, from the first showing to the closing table.</p>
+      <div className="page-head agents-head"><div className="wrap">
+        <div className="eyebrow">Charlotte Realty Group</div>
+        <h1>Meet Our Agents</h1>
+        <p>Local agents who know every back road. You work directly with one of us from the first showing to the closing table.</p>
       </div></div>
 
       <section className="band">
         <div className="wrap">
-          <div className="agents">
+          <div className="agent-list">
             {AGENTS.map((a) => (
-              <article className="agent-card" key={a.slug} id={a.slug}>
-                <div className="agent-photo">
-                  {a.photo ? (
-                    <Image src={a.photo} alt={a.name} fill sizes="(max-width: 700px) 100vw, 380px" style={{ objectFit: "cover", objectPosition: "50% 20%" }} />
-                  ) : (
-                    <div className="agent-initials"><span>{a.initials}</span><small>Photo coming soon</small></div>
-                  )}
-                </div>
-                <div className="agent-body">
-                  <div className="eyebrow">{a.title}</div>
+              <article className="agent-row" key={a.slug} id={a.slug}>
+                <div className="agent-avatar"><Image src={a.photo} alt={a.name} width={128} height={128} /></div>
+                <div className="agent-id">
                   <h2>{a.name}</h2>
-                  <p>{a.bio}</p>
-                  <ul className="featlist">{a.focus.map((f) => <li key={f}>{f}</li>)}</ul>
-                  <div className="agent-contact">
-                    <a href={a.phoneHref}>{a.phone}</a>
-                    <a href={`mailto:${a.email}`}>{a.email}</a>
-                  </div>
-                  <Link className="btn" href={`/contact?agent=${a.slug}`}>Contact {a.placeholder ? "this agent" : a.name}</Link>
+                  <div className="agent-title">{a.title}</div>
+                  <div className="agent-lic">{a.license}</div>
+                </div>
+                <p className="agent-bio">{a.bio}</p>
+                <dl className="agent-facts">
+                  <div><dt>Experience:</dt><dd>{a.experience}</dd></div>
+                  <div><dt>Serves:</dt><dd>{a.serves}</dd></div>
+                  <div><dt>Speaks:</dt><dd>{a.speaks}</dd></div>
+                </dl>
+                <div className="agent-links">
+                  <a href={a.phoneHref}><PhoneIcon />{a.phone}</a>
+                  <span className="dot" aria-hidden="true">·</span>
+                  <a href={`mailto:${a.email}`}><MailIcon />{a.email}</a>
+                  <Link className="agent-go" href={`/contact?agent=${a.slug}`} aria-label={`Contact ${a.name}`}>Contact <span aria-hidden="true">→</span></Link>
                 </div>
               </article>
             ))}

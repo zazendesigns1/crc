@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import HeroSearch from "@/components/HeroSearch";
+import PathCards from "@/components/PathCards";
 import ListingCard from "@/components/ListingCard";
 import { getListings, TOWNS, money, PLACEHOLDER_PHOTO } from "@/lib/listings";
 
@@ -26,13 +27,15 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="band">
+      <PathCards />
+
+      <section className="band" style={{ paddingTop: 0 }}>
         <div className="wrap">
           <div className="section-head">
             <div><div className="eyebrow">Our listings</div><h2>Featured properties</h2><p>Homes and land listed by Charlotte Realty Group.</p></div>
             <Link className="btn ghost" href="/search">See all homes</Link>
           </div>
-          <div className="grid">{ours.map((l) => <ListingCard key={l.id} l={l} />)}</div>
+          <div className="grid grid-4">{ours.map((l) => <ListingCard key={l.id} l={l} />)}</div>
         </div>
       </section>
 

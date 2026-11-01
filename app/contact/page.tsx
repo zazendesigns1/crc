@@ -27,7 +27,7 @@ export default async function Contact({ searchParams }: { searchParams: Promise<
           <h3 style={{ fontSize: "1.5rem" }}>Send a message</h3>
           <div className="field"><label htmlFor="cName">Name</label><input id="cName" required /></div>
           <div className="field"><label htmlFor="cEmail">Email or phone</label><input id="cEmail" required /></div>
-          <div className="field"><label htmlFor="cAgent">Preferred agent</label><select id="cAgent" defaultValue={preferred}><option value="">No preference</option>{AGENTS.map((a, i) => <option key={a.slug} value={a.slug}>{a.placeholder ? `Agent ${i + 1} (name coming soon)` : a.name}</option>)}</select></div>
+          <div className="field"><label htmlFor="cAgent">Preferred agent</label><select id="cAgent" defaultValue={preferred}><option value="">No preference</option>{AGENTS.map((a, i) => <option key={a.slug} value={a.slug}>{`${a.name} (Agent ${i + 1})`}</option>)}</select></div>
           <div className="field"><label htmlFor="cWhat">I&apos;m interested in</label><select id="cWhat"><option>Buying</option><option>Selling</option><option>Both</option><option>Land or acreage</option></select></div>
           <div className="field"><label htmlFor="cMsg">Message</label><textarea id="cMsg" rows={4} /></div>
         </LeadForm>
