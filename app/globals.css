@@ -497,3 +497,9 @@ footer.site img.footer-mark{height:96px;width:auto}
 .d-price{margin-top:22px}
 .d-head h1{margin-top:10px}
 .d-head .addr{margin-top:4px}
+/* Minimal centered contact card */
+.contact-wrap{padding:96px 0 120px;min-height:60vh}
+.contact-card{margin:0 auto;max-width:680px;text-align:center;justify-items:center}
+.contact-card .c-block{justify-items:center}
+.contact-card h1{text-wrap:balance}
+.page-head{padding:48px 0 52px}
