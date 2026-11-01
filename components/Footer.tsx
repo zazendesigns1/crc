@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="wrap">
         <div className="cols">
           <div style={{ display: "grid", gap: 12 }}>
-            <Image src="/logo-full-light.webp" alt="Charlotte Realty Group" width={210} height={84} />
+            <Image className="footer-mark" src="/logo-mark-light.webp" alt="Charlotte Realty Group" width={160} height={84} />
             <p style={{ margin: 0, fontSize: ".9rem", maxWidth: "40ch" }}>Independent real estate brokerage serving Washington County and the Battenkill Valley, New York.</p>
           </div>
           <div>
