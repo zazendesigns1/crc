@@ -24,7 +24,7 @@ export default function About() {
         </div>
         </div>
         <div className="box">
-          <AgentCard sub="Licensed Real Estate Broker, Owner" />
+          <AgentCard sub="Licensed Real Estate Broker · Owner" />
           <table className="specs" style={{ border: 0 }}><tbody>
             <tr><th>Phone</th><td>{BROKERAGE.phone}</td></tr>
             <tr><th>Email</th><td>{BROKERAGE.email}</td></tr>
