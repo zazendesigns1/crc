@@ -261,3 +261,9 @@ table.specs td{overflow-wrap:anywhere}
   .results-tools .filter-toggle{padding:8px 10px!important}
   .seg button{padding:8px 9px}
 }
+/* Hero search on phones: one bordered field per line */
+@media (max-width:700px){
+  .searchbar{grid-template-columns:1fr;gap:10px;padding:12px}
+  .searchbar label{border:1px solid var(--line);border-radius:6px;background:var(--cream);padding:8px 12px}
+  .searchbar .btn{grid-column:auto}
+}
