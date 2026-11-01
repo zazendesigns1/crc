@@ -11,8 +11,8 @@ export default function Sell() {
     <>
       <div className="page-head agents-head"><div className="wrap">
         <div className="eyebrow">Sell with Charlotte Realty Group</div>
-        <h1>What is your home worth?</h1>
-        <p>Get a free market analysis based on recent sales near you, plus a selling plan built around your property.</p>
+        <h1>Our Selling Process</h1>
+        <p>Three stages, one local team, start to finish.</p>
       </div></div>
       <SellSections />
       <section className="contact-wrap valuation-wrap" id="valuation">

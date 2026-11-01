@@ -69,10 +69,6 @@ export default function SellSections() {
     <>
       <section className="band process">
         <div className="wrap">
-          <div className="process-head">
-            <h2>Our Selling Process</h2>
-            <p>Three stages, one local team, start to finish.</p>
-          </div>
           <div className="process-grid">
             {STEPS.map((s) => (
               <article key={s.title} className={`process-col tone-${s.tone}`}>
