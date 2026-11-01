@@ -15,7 +15,7 @@ export default function Home() {
         <div className="wrap">
           <div className="hero-inner">
             <div className="hero-title">
-              <h1 className="eyebrow"><span className="seg-txt">Washington County ·</span> <span className="seg-txt">Battenkill Valley ·</span> <span className="seg-txt">Upstate New York Real Estate</span></h1>
+              <h1 className="eyebrow">Washington County &amp; Battenkill Valley Real Estate Company</h1>
             <p className="hero-h">Find your place in the country.</p>
             </div>
             <p className="lede">Farmhouses, acreage and village homes along the Battenkill, with a local broker who knows every back road.</p>
