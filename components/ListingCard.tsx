@@ -32,9 +32,9 @@ export default function ListingCard({ l, highlighted, onHover }: { l: Listing; h
         {l.ours && <span className="ours">CRG Listing</span>}
       </div>
       <div className="body">
-        <div className="price num">{money(l.price)}</div>
+        <div className="addr">{l.addr}, {l.town}</div>
         <Facts l={l} />
-        <div className="addr">{l.addr}, {l.town}, NY {l.zip}</div>
+        <div className="price num">{money(l.price)}</div>
         <div className="courtesy">Listing courtesy of {courtesyOf(l)} · MLS# {l.mls}</div>
       </div>
     </Link>

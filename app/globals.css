@@ -417,3 +417,26 @@ body{font-weight:400}
   .agent-links .agent-go{margin-top:14px;width:100%}
   .agent-links .agent-go .btn{width:100%;padding:13px 18px}
 }
+
+/* Airbnb-style weight system: 600 headings, 500 titles, 400 grey supporting text */
+h1,h2,h3{font-weight:600;letter-spacing:-.02em}
+.page-head p,.section-head p,.hero p.lede,.path-body p,.agent-bio,.step p,.town span,.quote,.c-block p,.c-agents span{font-weight:400}
+.eyebrow,.agent-title{font-weight:600}
+.price,.calc-out,.stats b,.keyfacts b{font-weight:600}
+/* Listing cards: title-style address, grey details */
+.card .price{font-size:1.3rem;color:var(--ink);letter-spacing:-.01em}
+.card .addr{font-weight:500;font-size:1.02rem;color:var(--ink)}
+.card .facts{color:var(--muted);font-weight:400}
+.card .facts b{font-weight:400}
+.card .body{gap:3px}
+/* Agents + contact */
+.agent-facts dt{font-weight:600}
+.agent-facts dd{font-weight:400}
+.agent-links a{font-weight:500}
+.c-lines{font-weight:500}
+.c-agents strong,.agent strong{font-weight:600}
+.btn{font-weight:600}
+.links a{font-weight:500}
+.field label,.field .lab,.searchbar label{font-weight:600}
+.card .price{font-weight:500;font-size:1.12rem;color:var(--ink);margin-top:2px}
+.card .facts{font-size:.95rem}
