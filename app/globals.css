@@ -490,3 +490,6 @@ footer.site img.footer-mark{height:96px;width:auto}
 /* More room between two-column sections on desktop */
 @media (min-width:821px){.split{gap:72px}}
 .c-icon{color:var(--ink)}
+/* Eyebrow spacing above headings */
+.section-head .eyebrow,.panel .eyebrow,.prose .eyebrow,.page-head .eyebrow{margin-bottom:8px}
+@media (max-width:700px){.section-head .eyebrow,.panel .eyebrow,.prose .eyebrow,.page-head .eyebrow{margin-bottom:12px}}
