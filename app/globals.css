@@ -54,7 +54,7 @@ header.site{background:var(--paper);border-bottom:1px solid var(--line);position
 .links a.cta{background:var(--forest);color:#fff;margin-left:6px}
 .links a.cta:hover{background:var(--forest-2)}
 .menu-btn{display:none;background:none;border:1px solid var(--line);border-radius:4px;padding:8px 12px;font-weight:600;cursor:pointer}
-@media (max-width:860px){
+@media (max-width:1100px){
   .menu-btn{display:block}
   .links{display:none;position:absolute;top:76px;left:0;right:0;background:var(--paper);flex-direction:column;align-items:stretch;padding:10px 20px 16px;border-bottom:1px solid var(--line)}
   .links.open{display:flex}
@@ -453,14 +453,14 @@ h1,h2,h3{font-weight:600;letter-spacing:-.02em}
 .burger.x span:first-child{transform:translateY(5.5px) rotate(45deg)}
 .burger.x span:last-child{transform:translateY(-5.5px) rotate(-45deg)}
 /* Mobile dropdown: large nav text */
-@media (max-width:860px){
+@media (max-width:1100px){
   .links{padding:14px 20px 24px;gap:2px}
   .links a{font-size:1.6rem;font-weight:500;padding:12px 8px;letter-spacing:-.01em}
   .links a.cta{font-size:1.15rem;padding:16px;margin-top:14px}
 }
 /* Full wordmark logo in header */
 .brand img{height:56px;width:auto}
-@media (max-width:860px){.brand img{height:46px}}
+@media (max-width:1100px){.brand img{height:46px}}
 @media (max-width:700px){.stats{justify-content:space-around;text-align:center;gap:16px}}
 
 /* Home H1 is the location line; the big headline is styled text */
@@ -554,3 +554,48 @@ main > :last-child{padding-bottom:128px!important}
 .services-list li:first-child{padding-top:6px}
 .services-list li:last-child{border-bottom:0}
 .services-list strong{color:var(--ink);font-weight:600}
+/* ===== Floating desktop navigation bar ===== */
+.nav-arrow{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;flex:none}
+@media (min-width:1101px){
+  header.site{background:transparent;border-bottom:0;padding-top:16px;position:sticky;top:0}
+  header.site .nav{height:auto;display:block}
+  .nav-bar{display:flex;align-items:stretch;justify-content:space-between;background:rgba(255,253,247,.94);backdrop-filter:blur(10px);border:1px solid var(--line);border-radius:18px;padding:10px 12px 10px 26px;box-shadow:0 14px 34px -26px rgba(20,30,15,.55)}
+  .nav-bar .brand{align-self:center}
+  .nav-bar .brand img{height:50px}
+  .links{display:flex;align-items:stretch;gap:0;margin-left:auto}
+  .links .nav-item{display:grid;align-content:center;gap:1px;padding:6px 26px;border-left:1px solid var(--line);border-radius:0;background:none!important;text-decoration:none}
+  .links .nav-item:first-of-type{border-left:0}
+  .links .m-only{display:none}
+  .nav-t{font-size:1.02rem;font-weight:500;color:var(--forest);line-height:1.2}
+  .nav-s{font-size:.86rem;font-weight:400;color:var(--muted);line-height:1.2}
+  .links .nav-item:hover .nav-t,.links .nav-item.on .nav-t{color:var(--red)}
+  .nav-ctas{display:flex;align-items:center;gap:10px;margin-left:18px}
+  .npill{display:inline-flex;align-items:center;gap:14px;padding:7px 7px 7px 22px;border-radius:999px;font-weight:500;font-size:.98rem;text-decoration:none;white-space:nowrap;transition:transform .15s ease}
+  .npill:hover{transform:translateY(-1px)}
+  .npill-ghost{background:#fff;border:1px solid var(--line);color:var(--forest)}
+  .npill-ghost .nav-arrow{background:var(--forest);color:#fff}
+  .npill-solid{background:var(--forest);color:#fff;border:1px solid var(--forest)}
+  .npill-solid .nav-arrow{background:rgba(255,255,255,.18);color:#fff}
+  /* Home: float the bar over the hero */
+  header.site.over-hero{position:absolute;left:0;right:0}
+  header.site.over-hero.solid{position:fixed;top:0}
+  .hero-inner{padding-top:150px}
+}
+@media (max-width:1100px){
+  .nav-bar{display:contents}
+  .nav-s,.nav-ctas .nav-arrow{display:none}
+  .links .nav-item{display:block}
+  .nav-ctas{display:grid;gap:10px;margin-top:14px}
+  .npill{display:block;text-align:center;padding:16px;border-radius:6px;font-size:1.15rem;font-weight:600;text-decoration:none}
+  .npill-ghost{border:1px solid var(--forest);color:var(--forest)}
+  .npill-solid{background:var(--forest);color:#fff}
+}
+.links a.npill{border-radius:999px}
+@media (max-width:1100px){.links a.npill{border-radius:6px;padding:16px;font-size:1.15rem;margin:0}.links .nav-item.on{background:var(--sage-soft)}}
+@media (min-width:1101px){.links a.npill{padding:7px 7px 7px 22px;font-size:.98rem;font-weight:500}.links a.npill-solid{color:#fff}.links a.npill-solid:hover{background:var(--forest-2)}}
+@media (max-width:1100px){.links a.npill-solid{color:#fff}}
+/* Sell: centered valuation card */
+.valuation-wrap{padding-top:88px}
+.val-title{font-size:clamp(1.9rem,3.6vw,2.5rem);text-align:center}
+.val-sub{margin:-18px 0 0;max-width:46ch;color:var(--muted);text-align:center}
+.valuation-wrap .cf{border-top:0;padding-top:0}
