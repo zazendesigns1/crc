@@ -62,7 +62,8 @@ export default function Home() {
             <p style={{ margin: 0, color: "var(--muted)" }}>Get a free, no-obligation market analysis based on recent sales in your town, not a website&apos;s guess.</p>
             <div><Link className="btn gold" href="/sell">Request a home valuation</Link></div>
           </div>
-          <div className="panel" style={{ background: "transparent", borderColor: "transparent" }}>
+          <div className="panel" style={{ background: "transparent", borderColor: "transparent", padding: 0 }}>
+            <div className="photo-frame"><Image src="/brand-photo.webp" alt="Michele with a Charlotte Realty Group For Sale sign" fill sizes="(max-width: 820px) 100vw, 560px" style={{ objectFit: "cover", objectPosition: "50% 30%" }} /></div>
             <p className="quote">“A small brokerage, on purpose. When you call, you get Michele. Every showing, every offer, every closing.”</p>
             <div className="small">Michele, Broker/Owner</div>
           </div>

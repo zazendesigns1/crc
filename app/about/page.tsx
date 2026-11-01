@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 import AgentCard from "@/components/AgentCard";
 import { BROKERAGE, TOWNS } from "@/lib/listings";
@@ -13,11 +14,14 @@ export default function About() {
         <h1>A small brokerage, by design</h1>
         <p>Charlotte Realty Group is a boutique, independent brokerage serving Washington County and the Battenkill Valley.</p>
       </div></div>
-      <section className="band"><div className="wrap split" style={{ alignItems: "start" }}>
+      <section className="band"><div className="wrap about-grid">
+        <div style={{ display: "grid", gap: 28 }}>
+        <div className="photo-frame"><Image src="/brand-photo.webp" alt="Michele, Broker/Owner of Charlotte Realty Group" fill priority sizes="(max-width: 820px) 100vw, 640px" style={{ objectFit: "cover", objectPosition: "50% 30%" }} /></div>
         <div className="prose">
           <p>[Placeholder bio. Michele can tell her story here: how long she&apos;s lived in the area, her background in real estate and hospitality, and why she opened her own brokerage.]</p>
           <p>Buying land or a farmhouse out here comes with questions you won&apos;t get in a subdivision: wells and septic, right-to-farm, river frontage, Agricultural District rules, and which roads the plow reaches first. We help you get clear answers before you make an offer.</p>
           <p>Whether you&apos;re relocating from the city, moving up the road, or selling the family place, you&apos;ll work directly with the broker from the first call to the closing table.</p>
+        </div>
         </div>
         <div className="box">
           <AgentCard sub="Licensed Real Estate Broker, Owner" />
