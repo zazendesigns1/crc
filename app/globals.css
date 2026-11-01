@@ -489,3 +489,4 @@ footer.site img.footer-mark{height:96px;width:auto}
 .btn.accent:hover{background:#cf4421}
 /* More room between two-column sections on desktop */
 @media (min-width:821px){.split{gap:72px}}
+.c-icon{color:var(--ink)}

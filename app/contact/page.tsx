@@ -7,9 +7,9 @@ import { AGENTS } from "@/lib/agents";
 export const metadata: Metadata = { title: "Contact", description: "Call, email, or message a Charlotte Realty Group agent about buying or selling in Washington County." };
 
 const Icon = ({ d }: { d: string }) => (
-  <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d={d} /></svg>
+  <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d={d} /></svg>
 );
-const CHAT = "M4 4h16v11H9l-4 4v-4H4z";
+const CHAT = "M5.5 3.5h13a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H10l-3.5 4v-4h-1a2 2 0 0 1-2-2v-9a2 2 0 0 1 2-2z";
 const PEOPLE = "M9 11a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6M16 4.3a3.5 3.5 0 0 1 0 6.4M18 14.3c2 .8 3.5 2.8 3.5 5.7";
 const CLOCK = "M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zM12 7v5l3 2";
 
