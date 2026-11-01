@@ -29,7 +29,7 @@ function SellArt() {
       <g {...S} fill="none"><path d="M96 172 V44 H230" /><path d="M150 44 V60 M210 44 V60" /></g>
       <rect x="132" y="60" width="96" height="70" rx="4" {...S} fill="#fffdf7" />
       <rect x="132" y="104" width="96" height="26" fill="#24401f" />
-      <text x="180" y="122" textAnchor="middle" fontFamily="Scoutie Sans Variable, sans-serif" fontSize="15" fontWeight="800" fill="#fffdf7">FOR SALE</text>
+      <text x="180" y="122" textAnchor="middle" fontFamily="Cereal, sans-serif" fontSize="15" fontWeight="800" fill="#fffdf7">FOR SALE</text>
       <g fill="#8c9a6e"><circle cx="180" cy="78" r="9" /><rect x="179" y="84" width="2" height="8" fill="#24401f" /></g>
       <path d="M150 96 C165 88 195 88 210 96" stroke="#b3974f" strokeWidth="2" fill="none" />
       <g {...S} fill="#e9dfc6"><circle cx="262" cy="150" r="12" /><circle cx="280" cy="154" r="10" /><circle cx="50" cy="156" r="11" /></g>

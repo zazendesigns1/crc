@@ -1,3 +1,9 @@
+@font-face{font-family:"Cereal";src:url("/fonts/cereal-light.woff2") format("woff2");font-weight:300;font-style:normal;font-display:swap}
+@font-face{font-family:"Cereal";src:url("/fonts/cereal-book.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Cereal";src:url("/fonts/cereal-medium.woff2") format("woff2");font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:"Cereal";src:url("/fonts/cereal-bold.woff2") format("woff2");font-weight:600 700;font-style:normal;font-display:swap}
+@font-face{font-family:"Cereal";src:url("/fonts/cereal-extrabold.woff2") format("woff2");font-weight:800;font-style:normal;font-display:swap}
+@font-face{font-family:"Cereal";src:url("/fonts/cereal-black.woff2") format("woff2");font-weight:900;font-style:normal;font-display:swap}
 /* Layout idea: a quiet country-brokerage site. Cream paper, forest-green type, gold hairlines echoing the logo.
    Home → search grid + valley map → listing detail. Listings are sample data shaped like a RESO feed. */
 :root{
@@ -11,10 +17,10 @@
   --ink:#1f2a1c;
   --muted:#5f6a57;
   --line:#e4dcc6;
-  --red:#a8452f;
-  --display:"Scoutie Sans Variable", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
-  --caps:"Scoutie Sans Variable", ui-sans-serif, system-ui, sans-serif;
-  --body:"Scoutie Sans Variable", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --red:#e8532b;
+  --display:"Cereal", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --caps:"Cereal", ui-sans-serif, system-ui, sans-serif;
+  --body:"Cereal", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
   color-scheme: light;
 }
 *{box-sizing:border-box}
@@ -351,7 +357,7 @@ footer.site{border-radius:28px 28px 0 0}
   .searchbar label{border-bottom:1px solid #d9cfb3;margin:0 6px;padding-bottom:6px}
 }
 
-/* Scoutie Sans: weight contrast */
+/* Weight contrast */
 body{font-weight:400}
 .eyebrow,.agent-title{font-weight:650;letter-spacing:.14em}
 .price,.calc-out,.stats b,.keyfacts b{font-weight:600;letter-spacing:-.02em}
@@ -464,3 +470,4 @@ h1,h2,h3{font-weight:600;letter-spacing:-.02em}
 /* Search page heading */
 .search-h1{font-size:clamp(1.5rem,3vw,2rem)}
 .search-count{margin:4px 0 0;color:var(--muted)}
+.pill.reduced{background:var(--red)}
