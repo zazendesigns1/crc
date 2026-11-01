@@ -380,3 +380,17 @@ body{font-weight:400}
 .c-agents span{font-size:.9rem;color:var(--muted);font-weight:350}
 .c-agents span a{color:inherit}
 .c-msg{padding:8px 16px!important;font-size:.88rem}
+/* Hero title group */
+.hero-title{display:grid;gap:22px}
+/* Phones: full-bleed photo under the menu with the headline over it; search sits below on cream */
+@media (max-width:700px){
+  .hero{--photo-h:430px;border-bottom:0}
+  .hero .bg{inset:auto;top:0;left:0;right:0;height:var(--photo-h)}
+  .hero .bg::after{background:linear-gradient(180deg,rgba(15,25,12,.05) 0%,rgba(15,25,12,.15) 45%,rgba(15,25,12,.7) 100%)}
+  .hero .bg img{object-position:62% 50%!important}
+  .hero-inner{padding:0 0 40px;gap:20px}
+  .hero-title{min-height:var(--photo-h);align-content:end;gap:10px;padding-bottom:28px}
+  .hero-title .eyebrow{color:#f3ecd4}
+  .hero-title h1{color:#fff;font-size:2.6rem;text-shadow:0 2px 18px rgba(0,0,0,.35)}
+  .hero p.lede{margin-top:6px}
+}
