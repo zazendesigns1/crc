@@ -640,3 +640,4 @@ header.site.over-hero,header.site.over-hero.solid{position:absolute!important;to
 footer.site{border-radius:28px 28px 0 0!important;margin-top:-28px!important;position:relative;z-index:1;border:1px solid var(--line);border-bottom:0;box-shadow:0 -12px 30px -28px rgba(20,30,15,.35)}
 @media (max-width:600px){footer.site{border-radius:20px 20px 0 0!important;margin-top:-20px!important}}
 @media (max-width:700px){header.site.over-hero.open-menu .logo-dark{display:block}header.site.over-hero.open-menu .logo-light{display:none}header.site.over-hero.open-menu .menu-btn{color:var(--ink)}}
+.process-art{order:-1;margin:0 0 10px}
