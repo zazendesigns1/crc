@@ -68,7 +68,7 @@ export default function Home() {
             <div><Link className="btn ghost" href="/sell">Request a home valuation</Link></div>
           </div>
           <div className="panel" style={{ background: "transparent", borderColor: "transparent", padding: 0 }}>
-            <div className="photo-frame"><Image src="/team-photo.webp" alt="The Charlotte Realty Group team in front of a home for sale" fill sizes="(max-width: 820px) 100vw, 560px" style={{ objectFit: "cover", objectPosition: "50% 22%" }} /></div>
+            <div className="photo-frame"><Image src="/team.webp" alt="The Charlotte Realty Group team in front of a home for sale" fill sizes="(max-width: 820px) 100vw, 560px" style={{ objectFit: "cover", objectPosition: "50% 30%" }} /></div>
             <p className="quote">“A small brokerage, on purpose. When you call, you get one of us. Every showing, every offer, every&nbsp;closing.”</p>
             <div className="small quote-by">The Charlotte Realty Group team</div>
           </div>

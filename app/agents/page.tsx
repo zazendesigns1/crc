@@ -57,7 +57,7 @@ export default function Agents() {
 
       <section className="band" style={{ background: "var(--paper)", borderTop: "1px solid var(--line)" }}>
         <div className="wrap split">
-          <div className="photo-frame"><Image src="/team-photo.webp" alt="The Charlotte Realty Group team in front of a home for sale" fill sizes="(max-width: 820px) 100vw, 560px" style={{ objectFit: "cover", objectPosition: "50% 22%" }} /></div>
+          <div className="photo-frame"><Image src="/team.webp" alt="The Charlotte Realty Group team in front of a home for sale" fill sizes="(max-width: 820px) 100vw, 560px" style={{ objectFit: "cover", objectPosition: "50% 30%" }} /></div>
           <div className="prose" style={{ display: "grid", gap: 4 }}>
             <div className="eyebrow">Why a small brokerage</div>
             <h2 style={{ fontSize: "2rem", marginBottom: 10 }}>Country real estate has its own questions</h2>
