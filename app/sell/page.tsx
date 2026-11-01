@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import LeadForm from "@/components/LeadForm";
+import SellSections from "@/components/SellSections";
 
 export const metadata: Metadata = { title: "Home Valuation", description: "Request a free market analysis of your Washington County home." };
 
@@ -18,7 +19,8 @@ export default function Sell() {
         <h1>What is your home worth?</h1>
         <p>Tell Michele a little about your property and she&apos;ll put together a free market analysis using recent sales near you.</p>
       </div></div>
-      <section className="band"><div className="wrap split" style={{ alignItems: "start" }}>
+      <SellSections />
+      <section className="band" id="valuation"><div className="wrap split" style={{ alignItems: "start" }}>
         <div className="steps">
           {STEPS.map(([n, h, p, d]) => (
             <div className="step" key={n}>

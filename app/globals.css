@@ -524,3 +524,33 @@ main > :last-child{padding-bottom:128px!important}
 /* Sell step icons */
 .step-icon{display:grid;place-items:center;width:52px;height:52px;border-radius:14px;background:var(--sage-soft);color:var(--forest);margin-bottom:12px}
 .step:hover .step-icon{background:var(--forest);color:#fff;transition:background .2s ease,color .2s ease}
+/* Sell: process columns */
+.process{background:var(--paper);border-bottom:1px solid var(--line)}
+.process-head{text-align:center;margin-bottom:48px}
+.process-head h2{font-size:clamp(2rem,4vw,2.8rem)}
+.process-head p{margin:8px 0 0;font-size:1.15rem;color:var(--muted)}
+.process-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px}
+@media (max-width:900px){.process-grid{grid-template-columns:minmax(0,1fr);gap:48px;max-width:520px;margin:0 auto}}
+.process-col{display:flex;flex-direction:column;gap:12px}
+.process-col h3{font-size:1.45rem;color:var(--ink)}
+.process-col > p{margin:0;color:var(--ink);font-weight:400}
+.process-col ul{list-style:none;padding:0;margin:6px 0 10px;display:grid;gap:10px}
+.process-col li{display:flex;align-items:center;gap:12px;color:var(--muted)}
+.tick{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;flex:none}
+.tone-sage .tick{background:#dfe6cf;color:var(--forest)}
+.tone-gold .tick{background:#f1e5c2;color:#8a6d24}
+.tone-coral .tick{background:#fbdcd2;color:var(--red)}
+.process-art{margin-top:auto;border-radius:14px;overflow:hidden;aspect-ratio:320/220}
+.process-art svg{display:block;width:100%;height:100%}
+/* Sell: services */
+.services{background:#f3efe4}
+.services-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:72px;align-items:start}
+@media (max-width:820px){.services-grid{grid-template-columns:1fr;gap:28px}}
+.services-lead{display:grid;gap:26px;justify-items:start}
+.services-lead h2{font-size:clamp(2rem,4vw,3rem);color:var(--ink)}
+.services-lead .btn{padding:14px 26px;border-radius:999px;font-size:1rem}
+.services-list{list-style:none;padding:0;margin:0}
+.services-list li{padding:26px 0;border-bottom:1px solid var(--line);font-size:1.12rem;color:var(--muted);line-height:1.5}
+.services-list li:first-child{padding-top:6px}
+.services-list li:last-child{border-bottom:0}
+.services-list strong{color:var(--ink);font-weight:600}
