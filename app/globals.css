@@ -653,3 +653,7 @@ body{background:var(--paper)}
 .process{background:var(--paper)}
 .field input,.field select,.field textarea,.chip,.sort,.seg{background-color:#fff}
 .process{padding-top:24px}
+/* More room under the nav on search and listing pages */
+.search-layout{padding-top:56px}
+.crumbs{padding-top:40px}
+@media (max-width:700px){.search-layout{padding-top:32px}.crumbs{padding-top:24px}}
