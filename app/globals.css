@@ -452,3 +452,6 @@ h1,h2,h3{font-weight:600;letter-spacing:-.02em}
   .links a{font-size:1.6rem;font-weight:500;padding:12px 8px;letter-spacing:-.01em}
   .links a.cta{font-size:1.15rem;padding:16px;margin-top:14px}
 }
+/* Full wordmark logo in header */
+.brand img{height:56px;width:auto}
+@media (max-width:860px){.brand img{height:46px}}

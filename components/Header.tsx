@@ -29,9 +29,8 @@ export default function Header() {
       <header className={`site${overHero ? " over-hero" : ""}${scrolled || open ? " solid" : ""}`}>
         <div className="wrap nav">
           <Link className="brand" href="/" aria-label="Charlotte Realty Group home">
-            <Image className="logo-dark" src="/logo-mark.webp" alt="" width={99} height={52} priority />
-            <Image className="logo-light" src="/logo-mark-light.webp" alt="" width={99} height={52} priority />
-            <span>Charlotte<small>Realty Group</small></span>
+            <Image className="logo-dark" src="/logo-header.webp" alt="" width={900} height={357} priority />
+            <Image className="logo-light" src="/logo-header-light.webp" alt="" width={900} height={357} priority />
           </Link>
           <button className="menu-btn" aria-expanded={open} aria-controls="links" aria-label={open ? "Close menu" : "Open menu"} onClick={() => setOpen((o) => !o)}><span className={`burger${open ? " x" : ""}`} aria-hidden="true"><span /><span /></span></button>
           <nav className={`links${open ? " open" : ""}`} id="links">
