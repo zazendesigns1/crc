@@ -503,3 +503,6 @@ footer.site img.footer-mark{height:96px;width:auto}
 .contact-card .c-block{justify-items:center}
 .contact-card h1{text-wrap:balance}
 .page-head{padding:48px 0 52px}
+/* Footer tucks under the last section so its rounded corners show that section's colour, no gap */
+footer.site{margin-top:-28px;position:relative;z-index:1}
+@media (max-width:600px){footer.site{margin-top:-20px}}
