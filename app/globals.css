@@ -394,3 +394,26 @@ body{font-weight:400}
   .hero-title h1{color:#fff;font-size:2.6rem;text-shadow:0 2px 18px rgba(0,0,0,.35)}
   .hero p.lede{margin-top:6px}
 }
+/* Phones, home page: transparent header over the hero photo, solid once scrolled */
+.logo-light{display:none}
+@media (max-width:700px){
+  header.site.over-hero{position:absolute;top:auto;left:0;right:0;background:transparent;border-bottom-color:transparent;transition:background .25s ease}
+  header.site.over-hero .logo-dark{display:none}
+  header.site.over-hero .logo-light{display:block}
+  header.site.over-hero .menu-btn{color:#fff;border-color:rgba(255,255,255,.55);background:rgba(255,255,255,.08);backdrop-filter:blur(4px)}
+  header.site.over-hero.solid{position:fixed;top:0;background:var(--paper);border-bottom-color:var(--line);box-shadow:0 6px 20px -16px rgba(0,0,0,.4)}
+  header.site.over-hero.solid .logo-dark{display:block}
+  header.site.over-hero.solid .logo-light{display:none}
+  header.site.over-hero.solid .menu-btn{color:var(--ink);border-color:var(--line);background:none}
+  .hero{--photo-h:506px}
+  .hero .bg::after{background:
+    linear-gradient(180deg,rgba(12,20,10,.62) 0%,rgba(12,20,10,.25) 90px,rgba(12,20,10,0) 170px),
+    linear-gradient(180deg,rgba(15,25,12,0) 40%,rgba(15,25,12,.15) 55%,rgba(15,25,12,.7) 100%)}
+}
+/* More breathing room above Send a Message */
+.agent-links{padding-top:20px;padding-bottom:22px}
+@media (max-width:480px){
+  .agent-links{gap:10px}
+  .agent-links .agent-go{margin-top:14px;width:100%}
+  .agent-links .agent-go .btn{width:100%;padding:13px 18px}
+}
