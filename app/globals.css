@@ -511,3 +511,16 @@ footer.site{margin-top:-28px;position:relative;z-index:1}
 main > :last-child{padding-bottom:128px!important}
 @media (max-width:700px){main > :last-child{padding-bottom:96px!important}}
 .detail{padding-bottom:0}
+/* Contact form inside the centered card */
+.cf,.cf-sent{width:100%;max-width:520px;display:grid;gap:14px;border-top:1px solid var(--line);padding-top:34px;text-align:left}
+.cf h2,.cf-sent h2{font-size:1.3rem;font-weight:600;color:var(--ink);text-align:center;margin-bottom:4px}
+.cf-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media (max-width:560px){.cf-row{grid-template-columns:1fr}}
+.cf .field input,.cf .field textarea,.cf .field select{background:#fff}
+.cf .field input:focus,.cf .field textarea:focus,.cf .field select:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(179,151,79,.2)}
+.cf-send{width:100%;padding:14px;font-size:1rem}
+.cf-sent{text-align:center}
+.cf-sent p{margin:0;color:var(--muted)}
+/* Sell step icons */
+.step-icon{display:grid;place-items:center;width:52px;height:52px;border-radius:14px;background:var(--sage-soft);color:var(--forest);margin-bottom:12px}
+.step:hover .step-icon{background:var(--forest);color:#fff;transition:background .2s ease,color .2s ease}

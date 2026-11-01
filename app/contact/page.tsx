@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { BROKERAGE } from "@/lib/listings";
+import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = { title: "Contact", description: "Call or email Charlotte Realty Group about buying or selling in Washington County." };
 
@@ -26,6 +27,7 @@ export default function Contact() {
               <a href={`mailto:${BROKERAGE.email}`}>{BROKERAGE.email}</a>
             </div>
           </div>
+          <ContactForm />
         </div>
       </div>
     </section>
