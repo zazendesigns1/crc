@@ -641,3 +641,13 @@ footer.site{border-radius:28px 28px 0 0!important;margin-top:-28px!important;pos
 @media (max-width:600px){footer.site{border-radius:20px 20px 0 0!important;margin-top:-20px!important}}
 @media (max-width:700px){header.site.over-hero.open-menu .logo-dark{display:block}header.site.over-hero.open-menu .logo-light{display:none}header.site.over-hero.open-menu .menu-btn{color:var(--ink)}}
 .process-art{order:-1;margin:0 0 10px}
+.process-art{position:relative}
+/* Header strip matches the title area on inner pages */
+@media (min-width:1101px){header.site:not(.over-hero){background:var(--paper)}}
+/* One light background site-wide (no darker beige bands) */
+body{background:var(--paper)}
+.agent-row,.card,.box,.step,.town,.filters,.panel{background:#fff}
+.page-head{border-bottom:0}
+.contact-wrap{background:var(--paper)}
+.contact-card{background:#fff;border:1px solid var(--line);box-shadow:0 20px 50px -40px rgba(20,30,15,.5)}
+.process{background:var(--paper)}
