@@ -324,3 +324,7 @@ table.specs td{overflow-wrap:anywhere}
 .path-body h2{font-size:1.8rem}
 .path-body p{margin:0 0 6px;color:var(--muted);max-width:34ch}
 .path-body .btn{margin-top:auto}
+
+/* Rounded top corners on footer */
+footer.site{border-radius:28px 28px 0 0}
+@media (max-width:600px){footer.site{border-radius:20px 20px 0 0}}
