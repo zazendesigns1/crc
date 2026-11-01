@@ -455,3 +455,4 @@ h1,h2,h3{font-weight:600;letter-spacing:-.02em}
 /* Full wordmark logo in header */
 .brand img{height:56px;width:auto}
 @media (max-width:860px){.brand img{height:46px}}
+@media (max-width:700px){.stats{justify-content:space-around;text-align:center;gap:16px}}
