@@ -44,7 +44,7 @@ export default function Header() {
             ))}
             <div className="nav-ctas">
               <Link href="/contact" className="npill npill-ghost">Get in touch</Link>
-              <a href="tel:+15185550142" className="npill npill-solid">Call the office</a>
+              <a href="tel:+15185550142" className="npill npill-solid m-call">Call the office</a>
             </div>
           </nav>
         </div></div>

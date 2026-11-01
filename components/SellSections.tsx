@@ -1,4 +1,3 @@
-import Image from "next/image";
 const S = { stroke: "#24401f", strokeWidth: 3, strokeLinecap: "round" as const, strokeLinejoin: "round" as const };
 
 function AssessArt() {
@@ -53,7 +52,7 @@ function CloseArt() {
 }
 
 const STEPS = [
-  { title: "Pricing Your Home", text: "We walk the property with you, then put together a written market analysis so you can list with confidence.", points: ["Recent sales from your town and nearby", "Land, outbuildings and updates accounted for", "A pricing range you can understand"], art: <Image src="/sell-assessment.webp" alt="Property assessment checklist on a clipboard in front of a white farmhouse" fill sizes="(max-width: 900px) 100vw, 380px" style={{ objectFit: "cover", objectPosition: "50% 40%" }} />, bg: "#e6e9d9", tone: "sage" },
+  { title: "Pricing Your Home", text: "We walk the property with you, then put together a written market analysis so you can list with confidence.", points: ["Recent sales from your town and nearby", "Land, outbuildings and updates accounted for", "A pricing range you can understand"], art: <AssessArt />, bg: "#e6e9d9", tone: "sage" },
   { title: "Getting It Seen", text: "Your listing goes on the MLS, out to buyer agents across the region, and in front of buyers searching online.", points: ["Professional listing photos", "Syndicated to the major home search sites", "Featured on our site and social media"], art: <MarketArt />, bg: "#efe7d2", tone: "gold" },
   { title: "Offer to Closing", text: "We review every offer with you, negotiate on your behalf, and keep the sale moving through to closing day.", points: ["Showing feedback after every visit", "Inspection and appraisal coordinated", "Regular updates until the keys change hands"], art: <CloseArt />, bg: "#dfe5d8", tone: "coral" },
 ];
