@@ -61,7 +61,7 @@ header.site{background:var(--paper);border-bottom:1px solid var(--line);position
 .hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
 .hero svg.scene{position:absolute;inset:0;width:100%;height:100%}
 .hero-inner{position:relative;padding:64px 0 56px;display:grid;gap:22px;max-width:760px}
-.hero h1{font-size:clamp(2.3rem,5.4vw,3.9rem)}
+.hero .hero-h{font-size:clamp(2.3rem,5.4vw,3.9rem)}
 .hero p.lede{font-size:1.1rem;color:var(--ink);max-width:56ch;margin:0}
 .searchbar{display:grid;grid-template-columns:1.4fr 1fr 1fr auto;gap:8px;background:var(--paper);padding:10px;border-radius:8px;border:1px solid var(--line);box-shadow:0 10px 30px -18px rgba(36,64,31,.45)}
 .searchbar label{display:flex;flex-direction:column;font-size:.7rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);padding:4px 8px;gap:2px}
@@ -391,7 +391,7 @@ body{font-weight:400}
   .hero-inner{padding:0 0 40px;gap:20px}
   .hero-title{min-height:var(--photo-h);align-content:end;gap:10px;padding-bottom:28px}
   .hero-title .eyebrow{color:#f3ecd4}
-  .hero-title h1{color:#fff;font-size:2.6rem;text-shadow:0 2px 18px rgba(0,0,0,.35)}
+  .hero-title .hero-h{color:#fff;font-size:2.6rem;text-shadow:0 2px 18px rgba(0,0,0,.35)}
   .hero p.lede{margin-top:6px}
 }
 /* Phones, home page: transparent header over the hero photo, solid once scrolled */
@@ -456,3 +456,11 @@ h1,h2,h3{font-weight:600;letter-spacing:-.02em}
 .brand img{height:56px;width:auto}
 @media (max-width:860px){.brand img{height:46px}}
 @media (max-width:700px){.stats{justify-content:space-around;text-align:center;gap:16px}}
+
+/* Home H1 is the location line; the big headline is styled text */
+.hero h1.eyebrow{font-family:var(--caps);font-size:.74rem;font-weight:600;letter-spacing:.14em;color:var(--gold);line-height:1.5;margin:0}
+.hero-h{font-family:var(--display);font-weight:600;letter-spacing:-.02em;color:var(--forest);text-wrap:balance;line-height:1.1;margin:0}
+@media (max-width:700px){.hero-title h1.eyebrow{color:#f3ecd4}}
+/* Search page heading */
+.search-h1{font-size:clamp(1.5rem,3vw,2rem)}
+.search-count{margin:4px 0 0;color:var(--muted)}

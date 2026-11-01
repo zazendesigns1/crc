@@ -15,8 +15,8 @@ export default function Home() {
         <div className="wrap">
           <div className="hero-inner">
             <div className="hero-title">
-              <div className="eyebrow"><span className="seg-txt">Washington County ·</span> <span className="seg-txt">Battenkill Valley ·</span> <span className="seg-txt">Upstate New York</span></div>
-            <h1>Find your place in the country.</h1>
+              <h1 className="eyebrow"><span className="seg-txt">Washington County ·</span> <span className="seg-txt">Battenkill Valley ·</span> <span className="seg-txt">Upstate New York Real Estate</span></h1>
+            <p className="hero-h">Find your place in the country.</p>
             </div>
             <p className="lede">Farmhouses, acreage and village homes along the Battenkill, with a local broker who knows every back road.</p>
             <HeroSearch />
@@ -65,7 +65,7 @@ export default function Home() {
             <div className="eyebrow">Thinking of selling?</div>
             <h2 style={{ fontSize: "2rem" }}>Find out what your home is worth</h2>
             <p style={{ margin: 0, color: "var(--muted)" }}>Get a free, no-obligation market analysis based on recent sales in your town, not a website&apos;s guess.</p>
-            <div><Link className="btn gold" href="/sell">Request a home valuation</Link></div>
+            <div><Link className="btn ghost" href="/sell">Request a home valuation</Link></div>
           </div>
           <div className="panel" style={{ background: "transparent", borderColor: "transparent", padding: 0 }}>
             <div className="photo-frame"><Image src="/brand-photo.webp" alt="Michele with a Charlotte Realty Group For Sale sign" fill sizes="(max-width: 820px) 100vw, 560px" style={{ objectFit: "cover", objectPosition: "50% 30%" }} /></div>
