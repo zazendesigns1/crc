@@ -108,7 +108,7 @@ export default function SearchClient({ listings }: { listings: Listing[] }) {
           <label htmlFor="fKw">Keyword</label>
           <input id="fKw" placeholder="Barn, pond, river frontage…" value={kw} onChange={(e) => setKw(e.target.value)} />
         </div>
-        <label style={{ display: "flex", gap: 8, alignItems: "center", fontWeight: 600, fontSize: ".92rem" }}>
+        <label className="ours-check">
           <input type="checkbox" checked={ours} onChange={(e) => setOurs(e.target.checked)} /> Only Charlotte Realty Group listings
         </label>
         <button className="btn ghost" type="button" onClick={reset}>Clear filters</button>
