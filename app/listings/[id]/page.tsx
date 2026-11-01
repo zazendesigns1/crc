@@ -74,7 +74,7 @@ export default async function ListingPage({ params }: Props) {
           </div>
         </div>
         <aside className="side">
-          <LeadForm submitLabel="Ask about this home" thanks="Thanks! This preview doesn't send messages yet. On the live site, Michele will get this by email.">
+          <LeadForm buttonClass="btn accent" submitLabel="Ask about this home" thanks="Thanks! This preview doesn't send messages yet. On the live site, Michele will get this by email.">
             <AgentCard />
             <div className="field"><label htmlFor="dName">Name</label><input id="dName" required /></div>
             <div className="field"><label htmlFor="dEmail">Email or phone</label><input id="dEmail" required /></div>

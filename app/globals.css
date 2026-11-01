@@ -483,3 +483,9 @@ footer.site img.footer-mark{height:96px;width:auto}
 .burger{gap:10px}
 .burger.x span:first-child{transform:translateY(6px) rotate(35deg)}
 .burger.x span:last-child{transform:translateY(-6px) rotate(-35deg)}
+.quote{text-align:center;text-wrap:balance}.quote-by{text-align:center}
+/* Bright accent button */
+.btn.accent{background:var(--red);color:#fff}
+.btn.accent:hover{background:#cf4421}
+/* More room between two-column sections on desktop */
+@media (min-width:821px){.split{gap:72px}}
