@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import { AGENTS } from "@/lib/agents";
+import MessageAgent from "@/components/MessageAgent";
 import { TOWNS } from "@/lib/listings";
 
 export const metadata: Metadata = {
@@ -46,7 +47,7 @@ export default function Agents() {
                   <a href={a.phoneHref}><PhoneIcon />{a.phone}</a>
                   <span className="dot" aria-hidden="true">·</span>
                   <a href={`mailto:${a.email}`}><MailIcon />{a.email}</a>
-                  <Link className="agent-go" href={`/contact?agent=${a.slug}`} aria-label={`Contact ${a.name}`}>Contact <span aria-hidden="true">→</span></Link>
+                  <span className="agent-go"><MessageAgent name={a.name} photo={a.photo} title={a.title} /></span>
                 </div>
               </article>
             ))}
