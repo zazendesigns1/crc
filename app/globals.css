@@ -651,3 +651,4 @@ body{background:var(--paper)}
 .contact-wrap{background:var(--paper)}
 .contact-card{background:#fff;border:1px solid var(--line);box-shadow:0 20px 50px -40px rgba(20,30,15,.5)}
 .process{background:var(--paper)}
+.field input,.field select,.field textarea,.chip,.sort,.seg{background-color:#fff}
