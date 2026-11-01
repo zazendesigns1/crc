@@ -1,37 +1,62 @@
 import type { Metadata } from "next";
-import LeadForm from "@/components/LeadForm";
-import AgentCard from "@/components/AgentCard";
+import Image from "next/image";
+import MessageAgent from "@/components/MessageAgent";
 import { BROKERAGE } from "@/lib/listings";
 import { AGENTS } from "@/lib/agents";
 
-export const metadata: Metadata = { title: "Contact", description: "Call, email, or send us a note about buying or selling in Washington County." };
+export const metadata: Metadata = { title: "Contact", description: "Call, email, or message a Charlotte Realty Group agent about buying or selling in Washington County." };
 
-export default async function Contact({ searchParams }: { searchParams: Promise<{ agent?: string }> }) {
-  const { agent } = await searchParams;
-  const preferred = AGENTS.some((a) => a.slug === agent) ? agent : "";
+const Icon = ({ d }: { d: string }) => (
+  <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d={d} /></svg>
+);
+const CHAT = "M4 4h16v11H9l-4 4v-4H4z";
+const PEOPLE = "M9 11a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6M16 4.3a3.5 3.5 0 0 1 0 6.4M18 14.3c2 .8 3.5 2.8 3.5 5.7";
+const CLOCK = "M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zM12 7v5l3 2";
+
+export default function Contact() {
   return (
-    <>
-      <div className="page-head"><div className="wrap">
-        <div className="eyebrow">Contact</div>
-        <h1>Let&apos;s talk about your move</h1>
-        <p>Call, email, or send a note below. We usually reply the same day.</p>
-      </div></div>
-      <section className="band"><div className="wrap split" style={{ alignItems: "start" }}>
-        <div className="box">
-          <AgentCard sub="Broker/Owner, Charlotte Realty Group" />
-          <div><div className="small">Phone</div><a href={BROKERAGE.phoneHref}>{BROKERAGE.phone}</a></div>
-          <div><div className="small">Email</div><a href={`mailto:${BROKERAGE.email}`}>{BROKERAGE.email}</a></div>
-          <div><div className="small">Office hours</div>Mon–Sat, 9am–6pm · Showings by appointment</div>
+    <section className="contact-wrap">
+      <div className="wrap">
+        <div className="contact-card">
+          <h1>Contact Charlotte Realty Group</h1>
+          <div className="c-block">
+            <h2>Get in touch?</h2>
+            <p>Reach the office, or message the agent who can help you best.</p>
+          </div>
+
+          <div className="c-block">
+            <span className="c-icon"><Icon d={CHAT} /></span>
+            <h2>Office</h2>
+            <p>Buying, selling, or general questions.</p>
+            <div className="c-lines">
+              <a href={BROKERAGE.phoneHref}>{BROKERAGE.phone}</a>
+              <a href={`mailto:${BROKERAGE.email}`}>{BROKERAGE.email}</a>
+              <span>{BROKERAGE.office}</span>
+            </div>
+          </div>
+
+          <div className="c-block">
+            <span className="c-icon"><Icon d={PEOPLE} /></span>
+            <h2>Our agents</h2>
+            <p>Send a message straight to one of our agents.</p>
+            <ul className="c-agents">
+              {AGENTS.map((a) => (
+                <li key={a.slug}>
+                  <Image src={a.photo} alt="" width={48} height={48} />
+                  <div><strong>{a.name}</strong><span>{a.title} · <a href={a.phoneHref}>{a.phone}</a></span></div>
+                  <MessageAgent name={a.name} photo={a.photo} title={a.title} label="Message" className="btn ghost c-msg" />
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="c-block">
+            <span className="c-icon"><Icon d={CLOCK} /></span>
+            <h2>Office hours</h2>
+            <p>Monday to Saturday, 9am to 6pm. Showings by appointment.</p>
+          </div>
         </div>
-        <LeadForm submitLabel="Send message" thanks="Thanks! This preview doesn't send messages yet. On the live site, this will go straight to the agent's inbox.">
-          <h3 style={{ fontSize: "1.5rem" }}>Send a message</h3>
-          <div className="field"><label htmlFor="cName">Name</label><input id="cName" required /></div>
-          <div className="field"><label htmlFor="cEmail">Email or phone</label><input id="cEmail" required /></div>
-          <div className="field"><label htmlFor="cAgent">Preferred agent</label><select id="cAgent" defaultValue={preferred}><option value="">No preference</option>{AGENTS.map((a, i) => <option key={a.slug} value={a.slug}>{`${a.name} (Agent ${i + 1})`}</option>)}</select></div>
-          <div className="field"><label htmlFor="cWhat">I&apos;m interested in</label><select id="cWhat"><option>Buying</option><option>Selling</option><option>Both</option><option>Land or acreage</option></select></div>
-          <div className="field"><label htmlFor="cMsg">Message</label><textarea id="cMsg" rows={4} /></div>
-        </LeadForm>
-      </div></section>
-    </>
+      </div>
+    </section>
   );
 }

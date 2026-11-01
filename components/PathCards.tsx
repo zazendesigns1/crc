@@ -29,7 +29,7 @@ function SellArt() {
       <g {...S} fill="none"><path d="M96 172 V44 H230" /><path d="M150 44 V60 M210 44 V60" /></g>
       <rect x="132" y="60" width="96" height="70" rx="4" {...S} fill="#fffdf7" />
       <rect x="132" y="104" width="96" height="26" fill="#24401f" />
-      <text x="180" y="122" textAnchor="middle" fontFamily="Georgia, serif" fontSize="15" fontWeight="700" fill="#fffdf7">FOR SALE</text>
+      <text x="180" y="122" textAnchor="middle" fontFamily="Scoutie Sans Variable, sans-serif" fontSize="15" fontWeight="800" fill="#fffdf7">FOR SALE</text>
       <g fill="#8c9a6e"><circle cx="180" cy="78" r="9" /><rect x="179" y="84" width="2" height="8" fill="#24401f" /></g>
       <path d="M150 96 C165 88 195 88 210 96" stroke="#b3974f" strokeWidth="2" fill="none" />
       <g {...S} fill="#e9dfc6"><circle cx="262" cy="150" r="12" /><circle cx="280" cy="154" r="10" /><circle cx="50" cy="156" r="11" /></g>
@@ -38,18 +38,21 @@ function SellArt() {
 }
 
 function AgentsArt() {
+  const person = (x: number, headY: number, r: number, w: number, top: number, fill: string, head: string) => (
+    <g {...S}>
+      <path d={`M${x - w} 206 V${top + w * 0.75} A${w} ${w * 0.75} 0 0 1 ${x + w} ${top + w * 0.75} V206 Z`} fill={fill} />
+      <circle cx={x} cy={headY} r={r} fill={head} />
+    </g>
+  );
   return (
     <svg viewBox="0 0 320 200" role="img" aria-label="Three agents">
-      <path d="M0 176 C90 166 210 172 320 164 L320 200 L0 200Z" fill="#c9d1b0" />
-      {[[100, "#e9dfc6"], [220, "#e9dfc6"], [160, "#fffdf7"]].map(([x, fill], i) => (
-        <g key={i} {...S} fill={fill as string} transform={i === 2 ? "translate(0 -10)" : undefined}>
-          <path d={`M${(x as number) - 42} 182 C${(x as number) - 40} 140 ${(x as number) + 40} 140 ${(x as number) + 42} 182`} />
-          <circle cx={x as number} cy={108} r={24} />
-        </g>
-      ))}
-      <path d="M150 156 L160 170 L170 156" {...S} fill="none" transform="translate(0 -10)" stroke="#b3974f" />
-      <g fill="#8c9a6e" opacity=".9"><circle cx="160" cy="42" r="16" /><circle cx="144" cy="50" r="12" /><circle cx="176" cy="50" r="12" /></g>
-      <path d="M160 58 V72" {...S} fill="none" />
+      <path d="M0 172 C90 160 210 168 320 156 L320 200 L0 200Z" fill="#c9d1b0" />
+      <g {...S} fill="#8c9a6e"><circle cx="40" cy="128" r="20" /><path d="M40 148 V170" fill="none" /></g>
+      <g {...S} fill="#e9dfc6"><circle cx="276" cy="156" r="11" /><circle cx="293" cy="160" r="9" /></g>
+      {person(104, 104, 18, 34, 132, "#e9dfc6", "#fffdf7")}
+      {person(216, 104, 18, 34, 132, "#e9dfc6", "#fffdf7")}
+      {person(160, 92, 22, 40, 124, "#fffdf7", "#fffdf7")}
+      <path d="M150 127 L160 141 L170 127" {...S} fill="none" stroke="#b3974f" />
     </svg>
   );
 }

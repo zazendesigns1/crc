@@ -12,9 +12,9 @@
   --muted:#5f6a57;
   --line:#e4dcc6;
   --red:#a8452f;
-  --display:"Cormorant Garamond", Georgia, "Times New Roman", serif;
-  --caps:"Cinzel", "Trajan Pro", Georgia, serif;
-  --body:"Mulish", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --display:"Scoutie Sans Variable", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --caps:"Scoutie Sans Variable", ui-sans-serif, system-ui, sans-serif;
+  --body:"Scoutie Sans Variable", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
   color-scheme: light;
 }
 *{box-sizing:border-box}
@@ -24,7 +24,7 @@ img{max-width:100%;display:block}
 a{color:var(--forest)}
 button,input,select,textarea{font:inherit;color:inherit}
 :focus-visible{outline:2px solid var(--gold);outline-offset:2px}
-h1,h2,h3{font-family:var(--display);font-weight:600;color:var(--forest);text-wrap:balance;line-height:1.1;margin:0}
+h1,h2,h3{font-family:var(--display);font-weight:750;letter-spacing:-.025em;color:var(--forest);text-wrap:balance;line-height:1.1;margin:0}
 .wrap{max-width:1180px;margin:0 auto;padding:0 20px}
 .eyebrow{font-family:var(--caps);letter-spacing:.18em;font-size:.74rem;color:var(--gold);text-transform:uppercase}
 .rule{display:flex;align-items:center;gap:14px}
@@ -346,3 +346,37 @@ footer.site{border-radius:28px 28px 0 0}
 .msg-sent{justify-items:center;text-align:center;padding:32px 24px}
 .msg-sent h3{font-size:1.5rem}
 .msg-sent p{margin:0;color:var(--muted)}
+/* Hero search: thin underline under each field on desktop */
+@media (min-width:701px){
+  .searchbar label{border-bottom:1px solid #d9cfb3;margin:0 6px;padding-bottom:6px}
+}
+
+/* Scoutie Sans: weight contrast */
+body{font-weight:400}
+.eyebrow,.agent-title{font-weight:650;letter-spacing:.14em}
+.price,.calc-out,.stats b,.keyfacts b{font-weight:750;letter-spacing:-.02em}
+.page-head p,.section-head p,.hero p.lede,.path-body p,.agent-bio,.step p,.town span{font-weight:350}
+.quote{font-weight:350;letter-spacing:-.01em}
+.brand span{font-weight:700;letter-spacing:.06em}
+.msg-name{font-weight:750}
+/* Contact page: one simple card on a soft gradient */
+.contact-wrap{background:linear-gradient(110deg,#e9ede0 0%,#f4f1e6 50%,#f6ecd8 100%);padding:72px 0 96px}
+.contact-card{max-width:760px;background:rgba(255,253,247,.72);border-radius:14px;padding:56px clamp(24px,6vw,64px);display:grid;gap:34px}
+.contact-card h1{font-size:clamp(2rem,4.4vw,2.8rem)}
+.c-block{display:grid;gap:4px;justify-items:start}
+.c-block h2{font-size:1.3rem;letter-spacing:-.01em;color:var(--ink);font-weight:700}
+.c-block p{margin:0;font-weight:300;font-size:1.08rem;color:var(--ink)}
+.c-icon{color:var(--forest);margin-bottom:8px}
+.c-lines{display:grid;gap:4px;margin-top:12px;font-weight:650;font-size:1.08rem}
+.c-lines a{color:var(--ink);text-decoration:none}
+.c-lines a:hover{text-decoration:underline}
+.c-lines span{font-weight:400;color:var(--muted)}
+.c-agents{list-style:none;padding:0;margin:14px 0 0;display:grid;gap:10px;width:100%}
+.c-agents li{display:flex;align-items:center;gap:14px;padding:10px 0;border-bottom:1px solid var(--line)}
+.c-agents li:last-child{border-bottom:0}
+.c-agents img{width:48px;height:48px;border-radius:50%;object-fit:cover;box-shadow:0 0 0 1.5px var(--gold);border:2px solid var(--paper)}
+.c-agents li > div{flex:1;min-width:0;display:grid}
+.c-agents strong{font-weight:700}
+.c-agents span{font-size:.9rem;color:var(--muted);font-weight:350}
+.c-agents span a{color:inherit}
+.c-msg{padding:8px 16px!important;font-size:.88rem}
