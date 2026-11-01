@@ -285,8 +285,8 @@ table.specs td{overflow-wrap:anywhere}
 .agent-bio{margin:10px 0 0;color:var(--muted);max-width:40ch}
 .agent-facts{margin:0;display:grid;gap:6px;align-content:start;font-size:1rem}
 .agent-facts div{display:flex;gap:6px}
-.agent-facts dt{color:var(--muted);font-weight:600;flex:none}
-.agent-facts dd{margin:0}
+.agent-facts dt{color:var(--forest);font-weight:800;flex:none}
+.agent-facts dd{margin:0;color:var(--muted);font-weight:400}
 .agent-links{display:flex;align-items:center;flex-wrap:wrap;gap:8px 14px;border-top:1px solid var(--line);margin-top:22px;padding:16px 0 18px}
 .agent-links a{display:inline-flex;align-items:center;gap:7px;color:var(--ink);font-weight:600;text-underline-offset:3px}
 .agent-links a svg{color:var(--gold);flex:none}
