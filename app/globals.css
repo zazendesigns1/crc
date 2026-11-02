@@ -762,3 +762,8 @@ body{background:var(--paper)}
 @media (max-width:360px){.hdr-logo img{height:32px}.hpill{padding:0 11px;font-size:.85rem}}
 .cov-sub a{white-space:nowrap}
 @media (max-width:600px){.contact-ov{padding-top:88px}.cov-x{top:14px;right:14px}}
+/* Sell: full green valuation section */
+.sell-contact{background:var(--forest);color:#fff;padding:96px 20px 140px!important;display:grid;place-items:center}
+.sell-contact .cov-inner{transform:none}
+.sell-contact h2{color:#fff;font-size:clamp(1.8rem,3.6vw,2.4rem);font-weight:600}
+@media (max-width:700px){.agent-facts{gap:12px}.agent-facts div{display:grid;gap:2px}}
