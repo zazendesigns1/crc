@@ -778,3 +778,8 @@ body{background:var(--paper)}
 .field label,.field .lab{color:var(--forest-2)}
 .field input,.field select,.field textarea{color:var(--forest)}
 .field input::placeholder,.field textarea::placeholder{color:#8a9c80}
+/* Lighter hero search values and stats */
+.searchbar select,.searchbar input{font-weight:400}
+.stats b{font-weight:500}
+/* More room above the green valuation section on desktop */
+@media (min-width:821px){.process{padding-bottom:120px}}
