@@ -740,3 +740,7 @@ body{background:var(--paper)}
   .menu-top .hpill-soft-dark{display:none}
   .menu-label{font-size:clamp(1.8rem,9vw,2.4rem)}
 }
+/* Brand greens for all titles and content text (replaces near-black) */
+:root{--ink:#24401f}
+.card .addr,.card .price,.process-col h3,.c-block h2,.cf h2,.agent-id h2,.d-head h1,.search-h1,.services-lead h2{color:var(--forest)}
+.card .facts,.process-col > p,.process-col li,.c-block p,.agent-facts dd,.foot-legal,.courtesy{color:var(--muted)}
