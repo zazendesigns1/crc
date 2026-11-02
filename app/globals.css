@@ -744,3 +744,21 @@ body{background:var(--paper)}
 :root{--ink:#24401f}
 .card .addr,.card .price,.process-col h3,.c-block h2,.cf h2,.agent-id h2,.d-head h1,.search-h1,.services-lead h2{color:var(--forest)}
 .card .facts,.process-col > p,.process-col li,.c-block p,.agent-facts dd,.foot-legal,.courtesy{color:var(--muted)}
+.menu-mark{position:absolute;left:-4%;bottom:-6%;width:min(62vw,880px);height:auto;opacity:.07;pointer-events:none;user-select:none}
+@media (max-width:700px){.menu-mark{width:120vw;left:-20%;bottom:-4%;opacity:.06}}
+@media (max-width:700px){
+  .menu-ov{padding:0}
+  .menu-panel{border-radius:0;clip-path:inset(0 0 100% 0)}
+  .menu-ov.open .menu-panel{clip-path:inset(0 0 0 0)}
+}
+/* Get in touch available on every device */
+@media (max-width:600px){
+  .hpill-soft,.menu-top .hpill-soft-dark{display:inline-flex!important}
+  .hdr-actions{gap:6px}
+  .hpill{height:40px;padding:0 14px;font-size:.9rem;gap:10px}
+  .hdr-logo img{height:38px}
+  .hbars span{width:18px}.hbars span:last-child{width:11px}
+}
+@media (max-width:360px){.hdr-logo img{height:32px}.hpill{padding:0 11px;font-size:.85rem}}
+.cov-sub a{white-space:nowrap}
+@media (max-width:600px){.contact-ov{padding-top:88px}.cov-x{top:14px;right:14px}}

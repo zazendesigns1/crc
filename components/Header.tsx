@@ -53,10 +53,7 @@ export default function Header() {
 
       <div id="site-menu" className={`menu-ov${open ? " open" : ""}`} role="dialog" aria-modal="true" aria-label="Site menu" aria-hidden={!open}>
         <div className="menu-panel">
-          <svg className="menu-arc" viewBox="0 0 1200 900" preserveAspectRatio="none" aria-hidden="true">
-            <path d="M-50 140 C 420 40, 980 330, 1080 960" />
-            <path d="M-80 760 L 260 920" />
-          </svg>
+          <img className="menu-mark" src="/logo-mark-light.webp" alt="" aria-hidden="true" />
           <div className="menu-top">
             <Link className="hdr-logo" href="/" aria-label="Charlotte Realty Group home" tabIndex={open ? 0 : -1}>
               <Image src="/logo-header-light.webp" alt="" width={900} height={357} />
