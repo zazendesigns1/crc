@@ -767,3 +767,14 @@ body{background:var(--paper)}
 .sell-contact .cov-inner{transform:none}
 .sell-contact h2{color:#fff;font-size:clamp(1.8rem,3.6vw,2.4rem);font-weight:600}
 @media (max-width:700px){.agent-facts{gap:12px}.agent-facts div{display:grid;gap:2px}}
+.sell-contact h1{color:#fff;font-size:clamp(1.8rem,3.6vw,2.4rem);font-weight:600}
+.contact-page{min-height:calc(100vh - 100px);padding-top:72px!important}
+/* Menu logo watermark: centered */
+.menu-mark{left:50%!important;top:50%;bottom:auto!important;transform:translate(-50%,-50%);width:min(70vw,760px)}
+@media (max-width:700px){.menu-mark{width:110vw}}
+/* Greener supporting text everywhere (no grey) */
+:root{--muted:#557049}
+.field label,.field .lab,.small,.agent span,.addr,.msg-org{color:var(--muted)}
+.field label,.field .lab{color:var(--forest-2)}
+.field input,.field select,.field textarea{color:var(--forest)}
+.field input::placeholder,.field textarea::placeholder{color:#8a9c80}
