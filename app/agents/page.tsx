@@ -26,6 +26,19 @@ export default function Agents() {
         <p>Local agents who know every back road. You work directly with one of us from the first showing to the closing table.</p>
       </div></div>
 
+      <section className="band team-intro">
+        <div className="wrap split">
+          <div className="photo-frame"><Image src="/team.webp" alt="The Charlotte Realty Group team in front of a home for sale" fill sizes="(max-width: 820px) 100vw, 560px" style={{ objectFit: "cover", objectPosition: "50% 30%" }} /></div>
+          <div className="prose" style={{ display: "grid", gap: 4 }}>
+            <div className="eyebrow">Why a small brokerage</div>
+            <h2 style={{ fontSize: "2rem", marginBottom: 10 }}>Country real estate has its own questions</h2>
+            <p>Wells and septic, right-to-farm, river frontage, Agricultural District rules, and which roads the plow reaches first. Our agents help you get clear answers before you make an offer.</p>
+            <p style={{ color: "var(--muted)" }}>Serving {TOWNS.join(", ")}.</p>
+            <div><Link className="btn ghost" href="/search">Browse listings</Link></div>
+          </div>
+        </div>
+      </section>
+
       <section className="band">
         <div className="wrap">
           <div className="agent-list">
@@ -38,35 +51,19 @@ export default function Agents() {
                   <div className="agent-lic">{a.license}</div>
                 </div>
                 <p className="agent-bio">{a.bio}</p>
-                <dl className="agent-facts">
-                  <div><dt>Experience:</dt><dd>{a.experience}</dd></div>
-                  <div><dt>Serves:</dt><dd>{a.serves}</dd></div>
-                  <div><dt>Speaks:</dt><dd>{a.speaks}</dd></div>
-                </dl>
-                <div className="agent-links">
+                <div className="agent-contact-col">
                   <a href={a.phoneHref}><PhoneIcon />{a.phone}</a>
-                  <span className="dot" aria-hidden="true">·</span>
                   <a href={`mailto:${a.email}`}><MailIcon />{a.email}</a>
-                  <span className="agent-go"><MessageAgent name={a.name} photo={a.photo} title={a.title} /></span>
+                  <MessageAgent name={a.name} photo={a.photo} title={a.title} />
                 </div>
+
               </article>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="band" style={{ background: "var(--paper)", borderTop: "1px solid var(--line)" }}>
-        <div className="wrap split">
-          <div className="photo-frame"><Image src="/team.webp" alt="The Charlotte Realty Group team in front of a home for sale" fill sizes="(max-width: 820px) 100vw, 560px" style={{ objectFit: "cover", objectPosition: "50% 30%" }} /></div>
-          <div className="prose" style={{ display: "grid", gap: 4 }}>
-            <div className="eyebrow">Why a small brokerage</div>
-            <h2 style={{ fontSize: "2rem", marginBottom: 10 }}>Country real estate has its own questions</h2>
-            <p>Wells and septic, right-to-farm, river frontage, Agricultural District rules, and which roads the plow reaches first. Our agents help you get clear answers before you make an offer.</p>
-            <p style={{ color: "var(--muted)" }}>Serving {TOWNS.join(", ")}.</p>
-            <div><Link className="btn ghost" href="/search">Browse listings</Link></div>
-          </div>
-        </div>
-      </section>
+
     </>
   );
 }

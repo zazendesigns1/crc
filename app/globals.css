@@ -786,3 +786,16 @@ body{background:var(--paper)}
 @media (min-width:821px){section.process{padding-bottom:150px!important}}@media (max-width:820px){section.process{padding-bottom:88px!important}}
 .cov-consent{text-align:center;text-wrap:balance}
 .foot-legal{max-width:100ch}
+.team-intro{padding-top:24px!important;padding-bottom:24px!important}
+/* Agent rows v2: contact column on the right, no divider row */
+.agent-row{grid-template-areas:'av id contact' 'av bio contact'!important;padding:28px!important;align-items:start}
+.agent-contact-col{grid-area:contact;display:grid;gap:10px;align-content:start;justify-items:start}
+.agent-contact-col a{display:inline-flex;align-items:center;gap:8px;color:var(--forest);font-weight:500;text-decoration:none;overflow-wrap:anywhere}
+.agent-contact-col a:hover{text-decoration:underline}
+.agent-contact-col a svg{color:var(--gold);flex:none}
+.agent-contact-col .btn{margin-top:8px;padding:12px 22px}
+@media (max-width:820px){
+  .agent-row{grid-template-areas:'av id' 'bio bio' 'contact contact'!important;padding:20px!important}
+  .agent-contact-col{margin-top:16px;justify-items:stretch}
+  .agent-contact-col .btn{width:100%}
+}
