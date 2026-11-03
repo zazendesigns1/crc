@@ -812,3 +812,5 @@ body{background:var(--paper)}
 .page-head > .wrap{background:#fff;border:1px solid var(--line);border-radius:20px;padding:56px clamp(20px,5vw,56px);max-width:1140px}
 @media (max-width:700px){.page-head{padding:24px 14px 8px!important}.page-head > .wrap{padding:36px 20px;border-radius:16px}}
 @media (min-width:901px){.process-grid{gap:64px}}
+/* Equal space above and below the nav strip */
+.page-head{padding-top:0!important}
