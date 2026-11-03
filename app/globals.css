@@ -814,3 +814,4 @@ body{background:var(--paper)}
 @media (min-width:901px){.process-grid{gap:64px}}
 /* Equal space above and below the nav strip */
 .page-head{padding-top:0!important}
+.photo-frame + .quote{margin-top:22px}
