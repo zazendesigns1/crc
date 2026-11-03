@@ -783,4 +783,4 @@ body{background:var(--paper)}
 .stats b{font-weight:500}
 /* More room above the green valuation section on desktop */
 @media (min-width:821px){.process{padding-bottom:120px}}
-@media (min-width:821px){section.process{padding-bottom:200px!important}}@media (max-width:820px){section.process{padding-bottom:110px!important}}
+@media (min-width:821px){section.process{padding-bottom:150px!important}}@media (max-width:820px){section.process{padding-bottom:88px!important}}
