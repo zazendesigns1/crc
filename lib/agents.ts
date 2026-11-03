@@ -18,7 +18,7 @@ const MICHELE: Omit<Agent, "slug"> = {
   name: "Michele",
   title: "Broker / Owner",
   license: "NYS Lic. #10491200000",
-  photo: "/michele-headshot.webp",
+  photo: "/agent-headshot.webp",
   experience: "12 years",
   serves: "Cambridge, Salem, Shushan, Greenwich",
   speaks: "English",
