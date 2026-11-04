@@ -3,6 +3,7 @@ import Image from "next/image";
 import HeroSearch from "@/components/HeroSearch";
 import ExpertiseCards from "@/components/ExpertiseCards";
 import NextBand from "@/components/NextBand";
+import TeamInterlude from "@/components/TeamInterlude";
 import ListingCard from "@/components/ListingCard";
 import { getListings, TOWNS, money, PLACEHOLDER_PHOTO } from "@/lib/listings";
 
@@ -32,7 +33,9 @@ export default function Home() {
 
       <ExpertiseCards />
 
-      <section className="band" style={{ paddingTop: 0 }}>
+      <TeamInterlude />
+
+      <section className="band">
         <div className="wrap">
           <div className="section-head">
             <div><div className="eyebrow">Our listings</div><h2>Featured properties</h2><p>Homes and land listed by Charlotte Realty Group.</p></div>
