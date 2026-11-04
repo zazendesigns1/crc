@@ -35,6 +35,11 @@ const ICONS: Record<string, ReactNode> = {
   ),
 };
 
+/* Flaticon PNGs, tinted with the brand color via CSS mask */
+const PNG: Record<string, string> = {
+  "Personal Representation": "/icons/hand-keys.png",
+};
+
 const APPROACH = [
   { title: "Experience", text: "Three decades of real estate legal experience bring depth and perspective to every transaction." },
   { title: "Insight", text: "A clear understanding of the property, the market and what shapes ownership and value." },
@@ -46,7 +51,9 @@ export default function ApproachCols() {
     <div className="v2approach-grid">
       {APPROACH.map((a) => (
         <div key={a.title} className="v2approach-col">
-          <svg className="v2approach-svg" width="56" height="56" viewBox="0 0 48 48" fill="none" stroke="var(--forest)" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">{ICONS[a.title]}</svg>
+          {PNG[a.title] ? (
+            <span className="v2approach-png" style={{ WebkitMaskImage: `url(${PNG[a.title]})`, maskImage: `url(${PNG[a.title]})` }} aria-hidden="true" />
+          ) : <svg className="v2approach-svg" width="56" height="56" viewBox="0 0 48 48" fill="none" stroke="var(--forest)" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">{ICONS[a.title]}</svg>}
           <h3>{a.title}</h3>
           <p>{a.text}</p>
         </div>
