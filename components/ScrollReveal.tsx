@@ -20,6 +20,7 @@ const RULES: [string, "up" | "left" | "right" | "zoom", boolean?][] = [
   [".detail aside.side", "right"],
   [".detail .prose, .detail .featlist, .detail table.specs", "up"],
   [".foot-pills, .foot-links", "up"],
+  [".exp-card", "zoom", true],
 ];
 
 export default function ScrollReveal() {

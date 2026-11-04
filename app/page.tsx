@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import HeroSearch from "@/components/HeroSearch";
 import PathCards from "@/components/PathCards";
+import ExpertiseCards from "@/components/ExpertiseCards";
 import ListingCard from "@/components/ListingCard";
 import { getListings, TOWNS, money, PLACEHOLDER_PHOTO } from "@/lib/listings";
 
@@ -11,14 +12,14 @@ export default function Home() {
   return (
     <>
       <section className="hero">
-        <div className="bg"><Image src={PLACEHOLDER_PHOTO} alt="" fill priority sizes="100vw" style={{ objectFit: "cover", objectPosition: "70% 50%" }} /></div>
+        <div className="bg"><Image src="/hero-estate.webp" alt="" fill priority sizes="100vw" style={{ objectFit: "cover", objectPosition: "80% 60%" }} /></div>
         <div className="wrap">
           <div className="hero-inner">
             <div className="hero-title">
-              <h1 className="eyebrow">Washington County &amp; Battenkill Valley Real Estate Company</h1>
-            <p className="hero-h">Find your place in the country.</p>
+              <h1 className="eyebrow">Capital District &amp; Southern Adirondack Real Estate</h1>
+            <p className="hero-h">Real estate.<br />Informed by experience.</p>
             </div>
-            <p className="lede">Farmhouses, acreage and village homes along the Battenkill, with a local broker who knows every back road.</p>
+            <p className="lede">Distinguished residences, equestrian estates, investment property and land, with thoughtful representation from people who understand what&apos;s at stake.</p>
             <HeroSearch />
             <div className="stats">
               <div><b className="num">{all.filter((l) => l.status !== "Pending").length}</b>active listings</div>
@@ -28,6 +29,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <ExpertiseCards />
 
       <PathCards />
 

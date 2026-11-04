@@ -20,9 +20,9 @@ export default function SearchClient({ listings }: { listings: Listing[] }) {
   const [max, setMax] = useState(init.max);
   const [beds, setBeds] = useState(init.beds);
   const [baths, setBaths] = useState(0);
-  const [types, setTypes] = useState<string[]>([]);
+  const [types, setTypes] = useState<string[]>(params.get("type") ? [params.get("type") as string] : []);
   const [acres, setAcres] = useState("0");
-  const [kw, setKw] = useState("");
+  const [kw, setKw] = useState(params.get("kw") ?? "");
   const [ours, setOurs] = useState(false);
   const [sort, setSort] = useState<Sort>("new");
   const [mode, setMode] = useState<"grid" | "map">("grid");
