@@ -19,9 +19,9 @@ export default function Home() {
           <div className="hero-inner">
             <div className="hero-title">
               <h1 className="eyebrow">Capital District &amp; Southern Adirondack Real Estate</h1>
-            <p className="hero-h">Real estate.<br /><em>Informed by<br />experience.</em></p>
+            <p className="hero-h">Know the land.<br /><em>Know the law.</em></p>
             </div>
-            <p className="lede">Distinguished residences, equestrian estates, investment property and land, represented by a team of three specialists who understand what&apos;s at stake.</p>
+            <p className="lede">Distinguished residences, equestrian estates, investment property and land, guided by three specialists in law, land and how properties are built.</p>
             <HeroSearch />
             <div className="stats">
               <div><b className="num">{all.filter((l) => l.status !== "Pending").length}</b>active listings</div>

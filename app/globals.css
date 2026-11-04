@@ -1136,3 +1136,8 @@ main > .nextband:last-child{padding-bottom:112px!important}
 main{overflow-x:clip}
 .hero .hero-h{font-size:clamp(2.4rem,5vw,4.1rem);line-height:1.02}
 .hero .hero-h em{font-style:italic;font-weight:500;letter-spacing:-.025em}
+
+/* No widows: balance short intros and headings, keep paragraphs from ending on one word */
+p,li,blockquote,figcaption{text-wrap:pretty}
+h1,h2,h3,.lede,.exp-head p,.section-head p,.agents-head p,.paths3-head p,.nextband-head p,.team-int-copy p,.v2approach-col p,.exp-card p,.quote{text-wrap:balance}
+.hero .lede{max-width:34em}

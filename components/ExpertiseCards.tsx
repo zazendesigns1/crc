@@ -15,7 +15,7 @@ export default function ExpertiseCards() {
         <div className="exp-head">
           <div className="eyebrow">Our areas of expertise</div>
           <h2>A different perspective on real estate</h2>
-          <p>Thirty years of real estate legal experience, a lifelong connection to the equestrian world and a licensed aircraft mechanic&apos;s technical eye: three perspectives, one boutique approach to real estate.</p>
+          <p>Thirty years in real estate law, a lifelong connection to the equestrian world and a licensed aircraft mechanic&apos;s technical eye. Three perspectives, one boutique approach.</p>
         </div>
         <div className="exp-grid">
           {CARDS.map((c) => (
