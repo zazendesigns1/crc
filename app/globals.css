@@ -1051,3 +1051,7 @@ main > .nextband:last-child{padding-bottom:112px!important}
 .nextband-steps li a .nb-num,.nextband-steps li a .nb-body{transition:transform .35s ease,color .3s,-webkit-text-stroke-color .3s}
 .nextband-steps li a:hover .nb-num,.nextband-steps li a:hover .nb-body{transform:translateX(8px)}
 @media (max-width:900px){.nextband-steps li a,.nextband-steps li a:hover{padding:24px 8px!important}.nextband-steps li a:hover .nb-num,.nextband-steps li a:hover .nb-body{transform:translateX(4px)}}
+
+/* Approach icons: bare two-tone line icons, no container */
+.v2approach-svg{display:block;margin-bottom:6px;transition:transform .4s ease}
+.v2approach-col:hover .v2approach-svg{transform:translateY(-3px)}
