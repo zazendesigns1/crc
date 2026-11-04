@@ -4,6 +4,7 @@ import HeroSearch from "@/components/HeroSearch";
 import ExpertiseCards from "@/components/ExpertiseCards";
 import NextBand from "@/components/NextBand";
 import TeamInterlude from "@/components/TeamInterlude";
+import Testimonials from "@/components/Testimonials";
 import ListingCard from "@/components/ListingCard";
 import { getListings, TOWNS, money, PLACEHOLDER_PHOTO } from "@/lib/listings";
 
@@ -18,7 +19,7 @@ export default function Home() {
           <div className="hero-inner">
             <div className="hero-title">
               <h1 className="eyebrow">Capital District &amp; Southern Adirondack Real Estate</h1>
-            <p className="hero-h">Real estate.<br />Informed by experience.</p>
+            <p className="hero-h">Real estate.<br /><em>Informed by<br />experience.</em></p>
             </div>
             <p className="lede">Distinguished residences, equestrian estates, investment property and land, represented by a team of three specialists who understand what&apos;s at stake.</p>
             <HeroSearch />
@@ -44,6 +45,8 @@ export default function Home() {
           <div className="grid grid-4">{ours.map((l) => <ListingCard key={l.id} l={l} />)}</div>
         </div>
       </section>
+
+      <Testimonials />
 
       <NextBand />
 

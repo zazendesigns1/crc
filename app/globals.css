@@ -1096,3 +1096,43 @@ main > .nextband:last-child{padding-bottom:112px!important}
   .arch-name{font-size:1rem}
   .arch-role{font-size:.58rem;letter-spacing:.12em}
 }
+.team-int h2{font-size:clamp(2rem,3.2vw,2.85rem)}
+.team-int h2 em{white-space:nowrap}
+.split > *{min-width:0}
+
+/* Team interlude as one big arch, set apart on the cream page */
+.team-int{width:min(1340px,calc(100% - 48px));margin:clamp(24px,4vw,56px) auto clamp(72px,8vw,112px);border-radius:50% 50% 32px 32px / 280px 280px 32px 32px;padding:210px 0 120px}
+.team-int::after{content:"";position:absolute;inset:14px;border:1px solid rgba(201,169,97,.35);border-radius:inherit;pointer-events:none}
+@media (max-width:900px){
+  .team-int{width:calc(100% - 24px);border-radius:50% 50% 24px 24px / 150px 150px 24px 24px;padding:130px 0 88px;margin:16px auto 64px}
+  .team-int::after{inset:8px}
+}
+@media (min-width:821px){.split{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}}
+
+/* ===== Home: testimonial carousel ===== */
+.testi{border-top:1px solid var(--line)}
+.testi-inner{display:grid;justify-items:center;text-align:center;gap:18px;max-width:900px}
+.testi-mark{color:var(--gold);opacity:.9;margin-top:6px}
+.testi-stage{display:grid;width:100%}
+.testi-slide{grid-area:1/1;margin:0;display:grid;gap:22px;justify-items:center;opacity:0;transform:translateY(10px);transition:opacity .6s ease,transform .6s ease;pointer-events:none}
+.testi-slide.on{opacity:1;transform:none;pointer-events:auto}
+.testi-slide blockquote{margin:0;font-size:clamp(1.4rem,2.6vw,2.05rem);line-height:1.38;color:var(--forest);font-weight:500;letter-spacing:-.015em;text-wrap:balance}
+.testi-slide figcaption{display:grid;gap:4px}
+.testi-slide figcaption b{color:var(--ink);font-size:1.05rem}
+.testi-slide figcaption span{font-family:var(--caps);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+.testi-nav{display:flex;align-items:center;gap:22px;margin-top:14px}
+.testi-arrow{background:none;border:0;font-size:1.5rem;color:var(--forest);cursor:pointer;padding:6px 8px;transition:color .2s,transform .2s}
+.testi-arrow:hover{color:var(--red)}
+.testi-arrow:first-child:hover{transform:translateX(-3px)}
+.testi-arrow:last-child:hover{transform:translateX(3px)}
+.testi-dots{display:flex;gap:8px}
+.testi-dot{width:36px;height:3px;padding:8px 0;background:none;border:0;cursor:pointer;position:relative}
+.testi-dot::before,.testi-dot span{content:"";position:absolute;left:0;top:50%;height:3px;margin-top:-1.5px;border-radius:2px}
+.testi-dot::before{right:0;background:rgba(47,64,40,.18)}
+.testi-dot span{width:0;background:var(--gold)}
+.testi-dot.on span{width:100%;animation:testiFill linear forwards}
+@keyframes testiFill{from{width:0}to{width:100%}}
+@media (prefers-reduced-motion:reduce){.testi-slide{transition:none}.testi-dot.on span{animation:none}}
+main{overflow-x:clip}
+.hero .hero-h{font-size:clamp(2.4rem,5vw,4.1rem);line-height:1.02}
+.hero .hero-h em{font-style:italic;font-weight:500;letter-spacing:-.025em}
