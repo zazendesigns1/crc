@@ -73,7 +73,7 @@ export default function Home() {
           <div className="panel" style={{ background: "transparent", borderColor: "transparent", padding: 0 }}>
             <div className="photo-frame"><Image src="/team.webp" alt="The Charlotte Realty Group team in front of a home for sale" fill sizes="(max-width: 820px) 100vw, 560px" style={{ objectFit: "cover", objectPosition: "50% 30%" }} /></div>
             <p className="quote">“Real estate is more than a transaction. It&apos;s an investment, a way of life, and often a&nbsp;legacy.”</p>
-            <div className="small quote-by">Michele Anderson &amp; Billy Smith</div>
+            <div className="small quote-by">The Charlotte Realty Group team</div>
           </div>
         </div>
       </section>

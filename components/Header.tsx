@@ -25,6 +25,7 @@ const NAV: (Item & { sub?: Item[] })[] = [
     { href: "/agents", label: "Our team" },
     { href: "/agents/michele", label: "Michele Anderson" },
     { href: "/agents/billy", label: "Billy Smith" },
+    { href: "/agents/scott", label: "Scott Morrissey" },
   ] },
   { href: "/contact", label: "Contact" },
 ];

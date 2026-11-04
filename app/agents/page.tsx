@@ -6,7 +6,7 @@ import MessageAgent from "@/components/MessageAgent";
 
 export const metadata: Metadata = {
   title: "About Us",
-  description: "Meet Michele Anderson and Billy Smith of Charlotte Realty Group, a boutique brokerage serving the Capital District and Southern Adirondacks.",
+  description: "Meet Michele Anderson, Billy Smith and Scott Morrissey of Charlotte Realty Group, a boutique brokerage serving the Capital District and Southern Adirondacks.",
 };
 
 const PhoneIcon = () => (
@@ -21,8 +21,8 @@ export default function Agents() {
     <>
       <div className="page-head agents-head"><div className="wrap">
         <div className="eyebrow">About Charlotte Realty Group</div>
-        <h1>Meet Michele &amp; Billy</h1>
-        <p>A distinctive combination of experience and local knowledge.</p>
+        <h1>Meet Our Team</h1>
+        <p>Experience. Expertise. Local knowledge.</p>
       </div></div>
 
       <section className="band team-intro">
@@ -31,10 +31,11 @@ export default function Agents() {
           <div className="prose" style={{ display: "grid", gap: 4 }}>
             <div className="eyebrow">What we bring</div>
             <h2 style={{ fontSize: "2rem", marginBottom: 10 }}>Experience that extends beyond the transaction.</h2>
-            <p>Real estate is more than a property. It&apos;s an investment, a way of life and often a legacy. Our team pairs deep transactional knowledge with genuine roots in the land and horse community.</p>
+            <p>Real estate is more than a property. It&apos;s an investment, a way of life and often a legacy. Charlotte Realty Group brings together professional experience, specialized knowledge and established local relationships.</p>
             <ul className="brings">
               <li><strong>The legal perspective.</strong> 30 years practicing real estate law: contracts, title, ownership structures and due diligence.</li>
-              <li><strong>The equestrian world.</strong> A horseman who trains at the region&apos;s major farms and knows the people who buy them.</li>
+              <li><strong>The equestrian world.</strong> A lifelong connection to the horse community, with an authentic understanding of horse properties, land and the rural lifestyle.</li>
+              <li><strong>The technical eye.</strong> A licensed aircraft mechanic&apos;s precision and understanding of how things are built and how they work.</li>
             </ul>
             <div><Link className="btn ghost" href="/search">Explore properties</Link></div>
           </div>

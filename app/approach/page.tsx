@@ -25,7 +25,7 @@ export default function Approach() {
             <h2>Experience that extends beyond the transaction.</h2>
             <p>Real estate is more than a property. It&apos;s an investment, a way of life and often a legacy. We start with the bigger picture: your goals, the property and the details that can make or break a deal.</p>
             <p>Whether you&apos;re buying a distinctive home, investing in income property or moving on from a long-held asset, you get a more considered approach to representation.</p>
-            <div><Link href="/agents" className="btn">Meet Michele &amp; Billy</Link></div>
+            <div><Link href="/agents" className="btn">Meet our team</Link></div>
           </div>
         </div>
       </section>
