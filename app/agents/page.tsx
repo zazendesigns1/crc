@@ -47,7 +47,7 @@ export default function Agents() {
           <div className="agent-list">
             {AGENTS.map((a) => (
               <article className="agent-row" key={a.slug} id={a.slug}>
-                <div className="agent-avatar"><Image src={a.photo} alt={a.name} width={128} height={128} /></div>
+                <div className="agent-avatar"><Image src={a.photo} alt={a.name} width={400} height={400} quality={90} /></div>
                 <div className="agent-id">
                   <h2>{a.name}</h2>
                   <div className="agent-title">{a.title}</div>

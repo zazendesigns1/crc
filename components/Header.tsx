@@ -27,7 +27,6 @@ const NAV: (Item & { sub?: Item[] })[] = [
     { href: "/agents/billy", label: "Billy Smith" },
     { href: "/agents/scott", label: "Scott Morrissey" },
   ] },
-  { href: "/contact", label: "Contact" },
 ];
 const MENU: Item[] = [
   { href: "/", label: "Home" },
