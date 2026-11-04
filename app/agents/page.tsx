@@ -23,16 +23,21 @@ export default function Agents() {
       <div className="page-head agents-head"><div className="wrap">
         <div className="eyebrow">Charlotte Realty Group</div>
         <h1>Meet Our Agents</h1>
-        <p>Local agents who know every back road. You work directly with one of us from the first showing to the closing table.</p>
+        <p>Three specialists, not three generalists. A real estate attorney, an equestrian professional and a hands-on property expert, all working for you.</p>
       </div></div>
 
       <section className="band team-intro">
         <div className="wrap split">
           <div className="photo-frame"><Image src="/team.webp" alt="The Charlotte Realty Group team in front of a home for sale" fill sizes="(max-width: 820px) 100vw, 560px" style={{ objectFit: "cover", objectPosition: "50% 30%" }} /></div>
           <div className="prose" style={{ display: "grid", gap: 4 }}>
-            <div className="eyebrow">Why a small brokerage</div>
+            <div className="eyebrow">What each of us brings</div>
             <h2 style={{ fontSize: "2rem", marginBottom: 10 }}>Country real estate has its own questions</h2>
-            <p>Wells and septic, right-to-farm, river frontage, Agricultural District rules, and which roads the plow reaches first. Our agents help you get clear answers before you make an offer.</p>
+            <p>Most agents get their license from a short online course. Our team brings decades of experience from the fields that matter most when you buy or sell in the country.</p>
+            <ul className="brings">
+              <li><strong>The legal side.</strong> 30 years practicing real estate law: contracts, title, easements and zoning.</li>
+              <li><strong>Horse properties.</strong> A trainer who works at the region&apos;s major horse farms and knows the buyers.</li>
+              <li><strong>The property itself.</strong> A mechanic&apos;s eye for construction, barns, outbuildings and systems.</li>
+            </ul>
             <p style={{ color: "var(--muted)" }}>Serving {TOWNS.join(", ")}.</p>
             <div><Link className="btn ghost" href="/search">Browse listings</Link></div>
           </div>
@@ -48,7 +53,8 @@ export default function Agents() {
                 <div className="agent-id">
                   <h2>{a.name}</h2>
                   <div className="agent-title">{a.title}</div>
-                  <div className="agent-lic">{a.license}</div>
+                  {a.license && <div className="agent-lic">{a.license}</div>}
+                  <span className="agent-tag">{a.specialty}</span>
                 </div>
                 <p className="agent-bio">{a.bio}</p>
                 <div className="agent-contact-col">
