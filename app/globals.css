@@ -1002,7 +1002,6 @@ main > .v2next:last-child{padding-bottom:0!important;margin-bottom:0;border-bott
   .nextband{padding:72px 0}
   .nextband-steps{grid-template-columns:1fr;gap:28px}
   .nextband-steps::before{top:32px;bottom:32px;left:50%;right:auto;width:1px;height:auto;background:linear-gradient(180deg,transparent,var(--gold) 10%,var(--gold) 90%,transparent)}
-  .nextband-steps li p{background:var(--forest)}
 }
 main > .nextband:last-child{padding-bottom:128px!important}
 @media (max-width:820px){.nextband-steps::before{display:none}}
