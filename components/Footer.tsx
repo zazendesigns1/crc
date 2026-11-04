@@ -1,4 +1,6 @@
+"use client";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { BROKERAGE } from "@/lib/listings";
 
 const I = ({ d }: { d: string }) => (
@@ -9,6 +11,8 @@ const TAG = "M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0L3 13V3h10l7.6 7.6a2 2 0 0 1 0 
 const PEOPLE = "M9 11a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6M16 4.3a3.5 3.5 0 0 1 0 6.4M18 14.3c2 .8 3.5 2.8 3.5 5.7";
 
 export default function Footer() {
+  const path = usePathname();
+  if (path === "/unlock") return null;
   return (
     <footer className="site">
       <div className="wrap foot">
