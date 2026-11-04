@@ -1044,3 +1044,10 @@ main > .nextband:last-child{padding-bottom:112px!important}
   .nextband-steps li a{gap:18px;padding:24px 8px}
   .nextband-steps li a:hover{padding-left:14px}
 }
+
+/* Ledger hover: no layout shift — only background, color and transform change */
+.nextband-steps li{border-bottom:1px solid rgba(47,64,40,.18)}
+.nextband-steps li a,.nextband-steps li a:hover{padding:30px 20px!important;border-bottom:0;transition:background .3s}
+.nextband-steps li a .nb-num,.nextband-steps li a .nb-body{transition:transform .35s ease,color .3s,-webkit-text-stroke-color .3s}
+.nextband-steps li a:hover .nb-num,.nextband-steps li a:hover .nb-body{transform:translateX(8px)}
+@media (max-width:900px){.nextband-steps li a,.nextband-steps li a:hover{padding:24px 8px!important}.nextband-steps li a:hover .nb-num,.nextband-steps li a:hover .nb-body{transform:translateX(4px)}}
