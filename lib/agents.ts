@@ -10,6 +10,7 @@ export interface Agent {
   specialty: string;
   license: string;
   photo: string;
+  portrait: string; // full-length profile photo
   bio: string; // one or two lines for the team card
   headline: string; // profile page headline
   story: string[]; // profile page paragraphs
@@ -28,7 +29,8 @@ export const AGENTS: Agent[] = [
     title: "Founder | Real Estate Broker",
     specialty: "30 years in real estate law",
     license: "NYS Lic. #10491200000",
-    photo: "/agent-headshot.webp",
+    photo: "/head-michele.webp",
+    portrait: "/portrait-michele.webp",
     bio: "Thirty years as a real estate attorney gives Michele a different perspective on every transaction.",
     headline: "A lifetime of real estate experience. A different perspective on every transaction.",
     story: [
@@ -48,7 +50,8 @@ export const AGENTS: Agent[] = [
     title: "Associate Real Estate Broker",
     specialty: "Equestrian properties",
     license: "NYS Lic. #[number]",
-    photo: "/agent-headshot-2.webp",
+    photo: "/head-billy.webp",
+    portrait: "/portrait-billy.webp",
     bio: "A horseman first. Billy brings a lifetime in the equestrian world and deep local relationships to every farm and acreage sale.",
     headline: "Local knowledge. A lifetime around horses.",
     story: [

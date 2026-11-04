@@ -25,7 +25,7 @@ export default async function AgentProfile({ params }: Props) {
       <section className="band profile">
         <div className="wrap profile-grid">
           <aside className="profile-side">
-            <div className="profile-photo"><Image src={a.photo} alt={a.name} fill sizes="320px" style={{ objectFit: "cover", objectPosition: "50% 25%" }} priority /></div>
+            <div className="profile-photo"><Image src={a.portrait} alt={a.name} fill sizes="(max-width: 860px) 100vw, 320px" style={{ objectFit: "cover", objectPosition: "50% 20%" }} priority /></div>
             <div className="profile-contact">
               <a href={a.phoneHref}>{a.phone}</a>
               <a href={`mailto:${a.email}`}>{a.email}</a>

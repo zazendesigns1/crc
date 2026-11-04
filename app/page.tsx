@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import HeroSearch from "@/components/HeroSearch";
-import PathCards from "@/components/PathCards";
 import ExpertiseCards from "@/components/ExpertiseCards";
 import NextBand from "@/components/NextBand";
 import ListingCard from "@/components/ListingCard";
@@ -44,8 +43,6 @@ export default function Home() {
       </section>
 
       <NextBand />
-
-      <PathCards />
 
       <section className="band" style={{ background: "var(--paper)", borderTop: "1px solid var(--line)", borderBottom: "1px solid var(--line)" }}>
         <div className="wrap">
