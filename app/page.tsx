@@ -5,10 +5,10 @@ import ContactPanel from "@/components/ContactPanel";
 import { getListings } from "@/lib/listings";
 
 const EXPERTISE = [
-  { title: "Distinguished Residences", text: "Exceptional homes defined by character, craftsmanship and setting.", img: "/v2-exp-1.webp", href: "/search?type=House" },
-  { title: "Equestrian Estates", text: "Horse farms and equestrian facilities, represented by people who know the lifestyle.", img: "/v2-exp-2.webp", href: "/search?type=Farm" },
-  { title: "Investment Real Estate", text: "Multifamily and income-producing property for investors who value informed advice.", img: "/v2-exp-3.webp", href: "/search?type=Multi-family" },
-  { title: "Land & Legacy Properties", text: "Expansive acreage, recreational land and rural estates with lasting potential.", img: "/v2-exp-4.webp", href: "/search?type=Land" },
+  { title: "Distinguished Residences", text: "Exceptional homes defined by character, craftsmanship and setting.", img: "/v2-exp-1-hd.webp", href: "/search?type=House" },
+  { title: "Equestrian Estates", text: "Horse farms and equestrian facilities, represented by people who know the lifestyle.", img: "/v2-exp-2-hd.webp", href: "/search?type=Farm" },
+  { title: "Investment Real Estate", text: "Multifamily and income-producing property for investors who value informed advice.", img: "/v2-exp-3-hd.webp", href: "/search?type=Multi-family" },
+  { title: "Land & Legacy Properties", text: "Expansive acreage, recreational land and rural estates with lasting potential.", img: "/v2-exp-4-hd.webp", href: "/search?type=Land" },
 ];
 
 const APPROACH = [
@@ -22,7 +22,7 @@ export default function Home() {
   return (
     <>
       <section className="v2hero">
-        <div className="v2hero-bg"><Image src="/v2-hero.webp" alt="" fill priority sizes="100vw" style={{ objectFit: "cover", objectPosition: "75% 55%" }} /></div>
+        <div className="v2hero-bg"><Image src="/v2-hero-hd.webp" alt="" fill priority sizes="100vw" style={{ objectFit: "cover", objectPosition: "100% 60%" }} /></div>
         <div className="wrap v2hero-inner">
           <h1 className="eyebrow">Capital District &amp; Southern Adirondack Real Estate</h1>
           <p className="v2hero-h">Real Estate.<br />Informed by <em>Experience.</em></p>
