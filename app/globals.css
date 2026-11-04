@@ -1057,3 +1057,5 @@ main > .nextband:last-child{padding-bottom:112px!important}
 .v2approach-col:hover .v2approach-svg{transform:translateY(-3px)}
 .v2approach-png{display:block;width:64px;height:64px;margin-bottom:2px;background:var(--forest);-webkit-mask:center/contain no-repeat;mask:center/contain no-repeat;transition:transform .4s ease}
 .v2approach-col:hover .v2approach-png{transform:translateY(-3px)}
+.area-check{display:block;color:var(--gold);margin-bottom:2px}
+.area-check{width:44px;height:44px;background:var(--gold);-webkit-mask:url(/icons/checkbox.png) center/contain no-repeat;mask:url(/icons/checkbox.png) center/contain no-repeat;margin-bottom:4px}
