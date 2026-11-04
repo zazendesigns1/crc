@@ -20,9 +20,9 @@ export default function SearchClient({ listings }: { listings: Listing[] }) {
   const [max, setMax] = useState(init.max);
   const [beds, setBeds] = useState(init.beds);
   const [baths, setBaths] = useState(0);
-  const [types, setTypes] = useState<string[]>([]);
+  const [types, setTypes] = useState<string[]>(params.get("type") ? [params.get("type") as string] : []);
   const [acres, setAcres] = useState("0");
-  const [kw, setKw] = useState("");
+  const [kw, setKw] = useState(params.get("kw") ?? "");
   const [ours, setOurs] = useState(false);
   const [sort, setSort] = useState<Sort>("new");
   const [mode, setMode] = useState<"grid" | "map">("grid");
@@ -117,7 +117,7 @@ export default function SearchClient({ listings }: { listings: Listing[] }) {
 
       <div>
         <div className="results-bar">
-          <div><h1 className="search-h1">Homes for Sale in Washington County, NY</h1><p className="search-count">{results.length} home{results.length === 1 ? "" : "s"} match your search</p></div>
+          <div><h1 className="search-h1">Homes for Sale in the Capital District &amp; Southern Adirondacks</h1><p className="search-count">{results.length} home{results.length === 1 ? "" : "s"} match your search</p></div>
           <div className="results-tools">
             <button type="button" className="btn ghost filter-toggle" aria-expanded={showFilters} aria-controls="filters" style={{ padding: "8px 14px" }}
               onClick={() => { setShowFilters((o) => !o); if (!showFilters) window.scrollTo({ top: 0, behavior: "smooth" }); }}>

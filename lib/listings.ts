@@ -41,7 +41,7 @@ export interface Listing {
 
 export const BROKERAGE = {
   name: "Charlotte Realty Group",
-  agent: "Michele, Broker",
+  agent: "Michele Anderson",
   title: "Broker/Owner",
   phone: "(518) 555-0142",
   phoneHref: "tel:+15185550142",

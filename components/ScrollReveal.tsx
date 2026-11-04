@@ -20,6 +20,14 @@ const RULES: [string, "up" | "left" | "right" | "zoom", boolean?][] = [
   [".detail aside.side", "right"],
   [".detail .prose, .detail .featlist, .detail table.specs", "up"],
   [".foot-pills, .foot-links", "up"],
+  [".v2rule-head, .v2lede", "up"],
+  [".v2exp-card", "zoom", true],
+  [".v2next-img", "left"],
+  [".v2next-copy", "right"],
+  [".v2approach-col", "up", true],
+  [".inv-card", "up", true],
+  [".profile-side", "left"],
+  [".profile-body", "right"],
 ];
 
 export default function ScrollReveal() {
@@ -36,7 +44,7 @@ export default function ScrollReveal() {
       for (const [sel, kind, stagger] of RULES) {
         const groups = new Map<Element | null, number>();
         document.querySelectorAll<HTMLElement>(sel).forEach((el) => {
-          if (el.closest(".hdr, .menu-ov, .contact-ov, .msg-dialog, .hero") || el.dataset.reveal) return;
+          if (el.closest(".hdr, .menu-ov, .contact-ov, .msg-dialog, .hero, .v2hero") || el.dataset.reveal) return;
           el.dataset.reveal = kind;
           if (stagger) {
             const n = groups.get(el.parentElement) ?? 0;
