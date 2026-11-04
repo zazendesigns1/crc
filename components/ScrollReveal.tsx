@@ -21,6 +21,8 @@ const RULES: [string, "up" | "left" | "right" | "zoom", boolean?][] = [
   [".detail .prose, .detail .featlist, .detail table.specs", "up"],
   [".foot-pills, .foot-links", "up"],
   [".exp-card", "zoom", true],
+  [".nextband-head", "up"],
+  [".nextband-steps li", "up", true],
   [".v2next-img", "left"],
   [".v2next-copy", "right"],
   [".v2approach-col", "up", true],

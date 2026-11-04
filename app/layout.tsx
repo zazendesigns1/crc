@@ -6,7 +6,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: { default: "Charlotte Realty Group | Real Estate. Informed by Experience.", template: "%s | Charlotte Realty Group" },
-  description: "Distinguished residences, equestrian estates, investment property and land across the Capital District and Southern Adirondacks.",
+  description: "A three-person boutique brokerage for distinguished residences, equestrian estates, investment property and land across the Capital District and Southern Adirondacks.",
   icons: { icon: "/logo-mark.webp" },
 };
 

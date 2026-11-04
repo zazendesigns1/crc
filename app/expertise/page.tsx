@@ -18,7 +18,7 @@ export default function Expertise() {
       <div className="page-head agents-head"><div className="wrap">
         <div className="eyebrow">Our areas of expertise</div>
         <h1>Exceptional properties. Distinctive perspectives.</h1>
-        <p>With 30 years of real estate legal experience and a lifelong connection to the equestrian world, we focus on the properties where experience matters most.</p>
+        <p>Real estate law, equestrian expertise and a technical eye for how properties are built: we focus on the properties where experience matters most.</p>
       </div></div>
 
       <section className="band">
