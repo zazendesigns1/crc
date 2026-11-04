@@ -3,6 +3,7 @@ import Image from "next/image";
 import HeroSearch from "@/components/HeroSearch";
 import PathCards from "@/components/PathCards";
 import ExpertiseCards from "@/components/ExpertiseCards";
+import NextBand from "@/components/NextBand";
 import ListingCard from "@/components/ListingCard";
 import { getListings, TOWNS, money, PLACEHOLDER_PHOTO } from "@/lib/listings";
 
@@ -32,8 +33,6 @@ export default function Home() {
 
       <ExpertiseCards />
 
-      <PathCards />
-
       <section className="band" style={{ paddingTop: 0 }}>
         <div className="wrap">
           <div className="section-head">
@@ -43,6 +42,10 @@ export default function Home() {
           <div className="grid grid-4">{ours.map((l) => <ListingCard key={l.id} l={l} />)}</div>
         </div>
       </section>
+
+      <NextBand />
+
+      <PathCards />
 
       <section className="band" style={{ background: "var(--paper)", borderTop: "1px solid var(--line)", borderBottom: "1px solid var(--line)" }}>
         <div className="wrap">
@@ -72,8 +75,8 @@ export default function Home() {
           </div>
           <div className="panel" style={{ background: "transparent", borderColor: "transparent", padding: 0 }}>
             <div className="photo-frame"><Image src="/team.webp" alt="The Charlotte Realty Group team in front of a home for sale" fill sizes="(max-width: 820px) 100vw, 560px" style={{ objectFit: "cover", objectPosition: "50% 30%" }} /></div>
-            <p className="quote">“Three specialists, not three generalists. The law, the land and the house itself, covered from the first showing to the&nbsp;closing.”</p>
-            <div className="small quote-by">The Charlotte Realty Group team</div>
+            <p className="quote">“Real estate is more than a transaction. It&apos;s an investment, a way of life, and often a&nbsp;legacy.”</p>
+            <div className="small quote-by">Michele Anderson &amp; Billy Smith</div>
           </div>
         </div>
       </section>

@@ -58,9 +58,9 @@ function AgentsArt() {
 }
 
 const CARDS = [
-  { title: "Buy a Home", text: "Search every MLS listing in Washington County, from village homes to farms with acreage.", href: "/search", cta: "Browse homes", art: <BuyArt />, bg: "#e6e9d9" },
+  { title: "Buy a Home", text: "Search every MLS listing in the region, from distinguished homes to horse farms and acreage.", href: "/search", cta: "Browse homes", art: <BuyArt />, bg: "#e6e9d9" },
   { title: "Sell a Home", text: "Get a free market analysis and a local marketing plan built around what makes your place special.", href: "/sell", cta: "How it works", art: <SellArt />, bg: "#efe7d2" },
-  { title: "Meet Our Agents", text: "A real estate attorney, an equestrian professional and a hands-on property expert, working for you.", href: "/agents", cta: "Our agents", art: <AgentsArt />, bg: "#dfe5d8" },
+  { title: "Meet Our Team", text: "Thirty years of real estate law and a lifetime in the equestrian world, working for you.", href: "/agents", cta: "Meet Michele & Billy", art: <AgentsArt />, bg: "#dfe5d8" },
 ];
 
 export default function PathCards() {

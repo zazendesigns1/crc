@@ -14,18 +14,20 @@ export default function Footer() {
       <div className="wrap foot">
         <div className="foot-pills">
           <Link href="/search" className="fpill"><I d={HOUSE} />Homes for sale</Link>
-          <Link href="/agents" className="fpill"><I d={PEOPLE} />Meet our agents</Link>
+          <Link href="/agents" className="fpill"><I d={PEOPLE} />Meet our team</Link>
           <Link href="/sell" className="fpill fpill-accent"><I d={TAG} />Sell your home</Link>
         </div>
         <nav className="foot-links" aria-label="Footer">
-          <Link href="/">Home</Link>
-          <Link href="/search">Search Homes</Link>
+          <Link href="/search">Properties</Link>
+          <Link href="/expertise">Expertise</Link>
+          <Link href="/approach">Our Approach</Link>
+          <Link href="/investment">Investment</Link>
+          <Link href="/agents">About</Link>
           <Link href="/sell">Sell</Link>
-          <Link href="/agents">Agents</Link>
           <Link href="/contact">Contact</Link>
         </nav>
         <div className="foot-legal">
-          <p>{BROKERAGE.name} is a licensed real estate broker in New York State, serving Washington County and the Battenkill Valley.</p>
+          <p>{BROKERAGE.name} is a licensed real estate broker in New York State, serving the Capital District and Southern Adirondacks.</p>
           <p>{BROKERAGE.office} · Phone: <a href={BROKERAGE.phoneHref}>{BROKERAGE.phone}</a> · <a href={`mailto:${BROKERAGE.email}`}>{BROKERAGE.email}</a></p>
           <p>Equal Housing Opportunity · <a href="#">NYS Fair Housing Notice</a> · <a href="#">NYS Standard Operating Procedures</a></p>
         </div>

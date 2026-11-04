@@ -117,7 +117,7 @@ export default function SearchClient({ listings }: { listings: Listing[] }) {
 
       <div>
         <div className="results-bar">
-          <div><h1 className="search-h1">Homes for Sale in Washington County, NY</h1><p className="search-count">{results.length} home{results.length === 1 ? "" : "s"} match your search</p></div>
+          <div><h1 className="search-h1">Homes for Sale in the Capital District &amp; Southern Adirondacks</h1><p className="search-count">{results.length} home{results.length === 1 ? "" : "s"} match your search</p></div>
           <div className="results-tools">
             <button type="button" className="btn ghost filter-toggle" aria-expanded={showFilters} aria-controls="filters" style={{ padding: "8px 14px" }}
               onClick={() => { setShowFilters((o) => !o); if (!showFilters) window.scrollTo({ top: 0, behavior: "smooth" }); }}>

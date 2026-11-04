@@ -2,8 +2,12 @@
 import { useState } from "react";
 import { BROKERAGE } from "@/lib/listings";
 
-/** Shared green contact form, used by the Get in touch overlay look and the Contact page. TODO (live site): POST to an API route. */
-export default function ContactPanel({ headingTag = "h2" }: { headingTag?: "h1" | "h2" }) {
+/** Shared green contact form (overlay, Contact page, home closing section). TODO (live site): POST to an API route. */
+export default function ContactPanel({
+  headingTag = "h2",
+  heading = "Thinking about buying or selling?",
+  sub,
+}: { headingTag?: "h1" | "h2"; heading?: string; sub?: React.ReactNode }) {
   const [sent, setSent] = useState(false);
   const H = headingTag;
   if (sent)
@@ -15,8 +19,10 @@ export default function ContactPanel({ headingTag = "h2" }: { headingTag?: "h1" 
     );
   return (
     <>
-      <H>Thinking about buying or selling?</H>
-      <p className="cov-sub">We&apos;d love to hear from you. Fill out the form below, or call us at <a href={BROKERAGE.phoneHref}>{BROKERAGE.phone}</a>. We usually reply the same day.</p>
+      <H>{heading}</H>
+      <p className="cov-sub">
+        {sub ?? <>Whether you&apos;re considering a purchase, preparing to sell or exploring what comes next, we&apos;d like to hear about your plans. Fill out the form or call <a href={BROKERAGE.phoneHref}>{BROKERAGE.phone}</a>.</>}
+      </p>
       <form className="cov-form" onSubmit={(e) => { e.preventDefault(); setSent(true); }}>
         <div className="cov-row">
           <input aria-label="Your name" placeholder="Your name *" required autoComplete="name" />
@@ -26,7 +32,7 @@ export default function ContactPanel({ headingTag = "h2" }: { headingTag?: "h1" 
         <div className="cov-row">
           <select aria-label="I'm interested in" defaultValue="">
             <option value="" disabled>I&apos;m interested in…</option>
-            <option>Buying</option><option>Selling</option><option>Buying and selling</option><option>Land or acreage</option><option>Something else</option>
+            <option>Buying</option><option>Selling</option><option>Equestrian property</option><option>Land and acreage</option><option>Investment property</option><option>A 1031 exchange or transition</option><option>Something else</option>
           </select>
           <input aria-label="Town or area" placeholder="Town or area" />
         </div>

@@ -5,8 +5,8 @@ import ScrollReveal from "@/components/ScrollReveal";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: { default: "Charlotte Realty Group | Washington County & Battenkill Valley Real Estate", template: "%s | Charlotte Realty Group" },
-  description: "Farmhouses, acreage and village homes in Washington County, NY. Search listings and work directly with a local broker.",
+  title: { default: "Charlotte Realty Group | Real Estate. Informed by Experience.", template: "%s | Charlotte Realty Group" },
+  description: "Distinguished residences, equestrian estates, investment property and land across the Capital District and Southern Adirondacks.",
   icons: { icon: "/logo-mark.webp" },
 };
 

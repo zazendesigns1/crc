@@ -21,6 +21,14 @@ const RULES: [string, "up" | "left" | "right" | "zoom", boolean?][] = [
   [".detail .prose, .detail .featlist, .detail table.specs", "up"],
   [".foot-pills, .foot-links", "up"],
   [".exp-card", "zoom", true],
+  [".v2next-img", "left"],
+  [".v2next-copy", "right"],
+  [".v2approach-col", "up", true],
+  [".inv-card", "up", true],
+  [".profile-side", "left"],
+  [".profile-body", "right"],
+  [".area-img", "zoom"],
+  [".area-copy", "up"],
 ];
 
 export default function ScrollReveal() {

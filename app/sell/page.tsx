@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import SellContact from "@/components/SellContact";
 import SellSections from "@/components/SellSections";
 
-export const metadata: Metadata = { title: "Home Valuation", description: "Request a free market analysis of your Washington County home." };
+export const metadata: Metadata = { title: "Home Valuation", description: "Request a free market analysis of your home or property." };
 
 
 

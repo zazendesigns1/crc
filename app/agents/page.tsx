@@ -3,11 +3,10 @@ import Image from "next/image";
 import type { Metadata } from "next";
 import { AGENTS } from "@/lib/agents";
 import MessageAgent from "@/components/MessageAgent";
-import { TOWNS } from "@/lib/listings";
 
 export const metadata: Metadata = {
-  title: "Our Agents",
-  description: "Meet the agents of Charlotte Realty Group, a boutique brokerage serving Washington County and the Battenkill Valley.",
+  title: "About Us",
+  description: "Meet Michele Anderson and Billy Smith of Charlotte Realty Group, a boutique brokerage serving the Capital District and Southern Adirondacks.",
 };
 
 const PhoneIcon = () => (
@@ -21,25 +20,23 @@ export default function Agents() {
   return (
     <>
       <div className="page-head agents-head"><div className="wrap">
-        <div className="eyebrow">Charlotte Realty Group</div>
-        <h1>Meet Our Agents</h1>
-        <p>Three specialists, not three generalists. A real estate attorney, an equestrian professional and a hands-on property expert, all working for you.</p>
+        <div className="eyebrow">About Charlotte Realty Group</div>
+        <h1>Meet Michele &amp; Billy</h1>
+        <p>A distinctive combination of experience and local knowledge.</p>
       </div></div>
 
       <section className="band team-intro">
         <div className="wrap split">
-          <div className="photo-frame"><Image src="/team.webp" alt="The Charlotte Realty Group team in front of a home for sale" fill sizes="(max-width: 820px) 100vw, 560px" style={{ objectFit: "cover", objectPosition: "50% 30%" }} /></div>
+          <div className="photo-frame"><Image src="/team.webp" alt="The Charlotte Realty Group team" fill sizes="(max-width: 820px) 100vw, 560px" style={{ objectFit: "cover", objectPosition: "50% 30%" }} /></div>
           <div className="prose" style={{ display: "grid", gap: 4 }}>
-            <div className="eyebrow">What each of us brings</div>
-            <h2 style={{ fontSize: "2rem", marginBottom: 10 }}>Country real estate has its own questions</h2>
-            <p>Most agents get their license from a short online course. Our team brings decades of experience from the fields that matter most when you buy or sell in the country.</p>
+            <div className="eyebrow">What we bring</div>
+            <h2 style={{ fontSize: "2rem", marginBottom: 10 }}>Experience that extends beyond the transaction.</h2>
+            <p>Real estate is more than a property. It&apos;s an investment, a way of life and often a legacy. Our team pairs deep transactional knowledge with genuine roots in the land and horse community.</p>
             <ul className="brings">
-              <li><strong>The legal side.</strong> 30 years practicing real estate law: contracts, title, easements and zoning.</li>
-              <li><strong>Horse properties.</strong> A trainer who works at the region&apos;s major horse farms and knows the buyers.</li>
-              <li><strong>The property itself.</strong> A mechanic&apos;s eye for construction, barns, outbuildings and systems.</li>
+              <li><strong>The legal perspective.</strong> 30 years practicing real estate law: contracts, title, ownership structures and due diligence.</li>
+              <li><strong>The equestrian world.</strong> A horseman who trains at the region&apos;s major farms and knows the people who buy them.</li>
             </ul>
-            <p style={{ color: "var(--muted)" }}>Serving {TOWNS.join(", ")}.</p>
-            <div><Link className="btn ghost" href="/search">Browse listings</Link></div>
+            <div><Link className="btn ghost" href="/search">Explore properties</Link></div>
           </div>
         </div>
       </section>
@@ -56,20 +53,20 @@ export default function Agents() {
                   {a.license && <div className="agent-lic">{a.license}</div>}
                   <span className="agent-tag">{a.specialty}</span>
                 </div>
-                <p className="agent-bio">{a.bio}</p>
+                <div className="agent-bio">
+                  <p style={{ margin: 0 }}>{a.bio}</p>
+                  <Link href={`/agents/${a.slug}`} className="agent-more">Read {a.firstName}&apos;s story <span aria-hidden="true">→</span></Link>
+                </div>
                 <div className="agent-contact-col">
                   <a href={a.phoneHref}><PhoneIcon />{a.phone}</a>
                   <a href={`mailto:${a.email}`}><MailIcon />{a.email}</a>
                   <MessageAgent name={a.name} photo={a.photo} title={a.title} />
                 </div>
-
               </article>
             ))}
           </div>
         </div>
       </section>
-
-
     </>
   );
 }
