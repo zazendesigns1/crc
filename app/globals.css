@@ -612,7 +612,8 @@ footer.site .foot-links a{color:var(--ink);font-size:1.05rem;text-decoration:non
 footer.site .foot-links a:hover{color:var(--red)}
 .foot-legal{display:grid;gap:8px;max-width:80ch;font-size:.9rem}
 .foot-legal p{margin:0}
-footer.site .foot-legal a,footer.site .foot-bottom a{color:var(--ink);text-decoration:underline;text-underline-offset:2px}
+footer.site .foot-legal a,
+footer.site .foot-bottom a,footer.site .foot-bottom a{color:var(--ink);text-decoration:underline;text-underline-offset:2px}
 .foot-bottom{font-size:.85rem;padding-top:8px}
 @media (max-width:600px){.fpill{width:100%;justify-content:center}.foot-pills{width:100%;display:grid}.foot-links{gap:10px 22px}}
 footer.site a.fpill{color:var(--ink)}footer.site a.fpill:hover{text-decoration:none}footer.site a.fpill-accent{color:var(--red)}
@@ -1183,3 +1184,25 @@ h1,h2,h3,.lede,.exp-head p,.section-head p,.agents-head p,.paths3-head p,.nextba
 .hero2-h{font-size:clamp(2.1rem,3.9vw,3.4rem);line-height:1.08}
 .hero2-inner > .hero2-h{max-width:720px}
 @media (max-width:860px){.hero2-h{font-size:clamp(2rem,8.6vw,2.6rem)}}
+
+/* Text links: dotted underline with breathing room (buttons, nav and cards excluded) */
+.agent-more,
+.agent-contact-col a,
+.profile-contact a,
+footer.site .foot-links a,
+footer.site p a,
+footer.site .foot-legal a,
+footer.site .foot-bottom a,
+main p a:not(.btn):not([class*="btn"]),
+main li a:not(.btn):not([class*="btn"]):not([class*="card"]),
+.prose a{
+  text-decoration:underline dotted;
+  text-decoration-thickness:1.5px;
+  text-underline-offset:7px;
+  text-decoration-color:color-mix(in srgb,currentColor 55%,transparent);
+  transition:text-decoration-color .2s,color .2s;
+}
+.agent-more:hover,.agent-contact-col a:hover,.profile-contact a:hover,footer.site a:hover,main p a:hover,main li a:hover,.prose a:hover{
+  text-decoration:underline dotted;text-decoration-thickness:1.5px;text-underline-offset:7px;text-decoration-color:currentColor;
+}
+footer.site .foot-links{row-gap:14px}

@@ -27,7 +27,6 @@ export default function Expertise() {
             <article key={a.title} className={`area-row${i % 2 ? " flip" : ""}`}>
               <div className="area-img"><Image src={a.img} alt="" fill sizes="(max-width: 820px) 100vw, 560px" style={{ objectFit: "cover" }} /></div>
               <div className="area-copy">
-                <span className="area-check" aria-hidden="true" />
                 <h2>{a.title}</h2>
                 <p>{a.text}</p>
                 <div><Link href={a.href} className="btn ghost">View properties <span aria-hidden="true">→</span></Link></div>

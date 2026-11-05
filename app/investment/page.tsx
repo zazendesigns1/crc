@@ -43,7 +43,6 @@ export default function Investment() {
         <div className="wrap inv-grid">
           {BLOCKS.map((b, i) => (
             <article key={b.title} className="inv-card">
-              <span className="area-check" aria-hidden="true" />
               <h2>{b.title}</h2>
               {b.body.map((p, j) => <p key={j}>{p}</p>)}
             </article>
