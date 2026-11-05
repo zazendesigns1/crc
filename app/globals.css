@@ -1212,3 +1212,14 @@ footer.site .foot-links{row-gap:14px}
 .area-check{background:var(--forest)}
 /* Wider, shorter page-head intro */
 .page-head.agents-head p{max-width:760px}
+
+/* Page title areas: full width band (no rounded card, no side borders) */
+.page-head{background:#fff!important;border:0!important;border-top:1px solid var(--line)!important;border-bottom:1px solid var(--line)!important;padding:0!important;margin:0}
+.page-head > .wrap{background:none!important;border:0!important;border-radius:0!important;max-width:1180px;padding:72px 20px!important}
+@media (max-width:700px){.page-head > .wrap{padding:44px 20px!important}}
+/* Bullets: hand-drawn checkmark in brand green instead of gold dots */
+.brings li::before{top:.15em;left:-2px;width:22px;height:22px;border-radius:0;background:var(--forest);-webkit-mask:url(/icons/checkbox.png) center/contain no-repeat;mask:url(/icons/checkbox.png) center/contain no-repeat}
+.brings li{padding-left:34px}
+.brings li::before{left:0;top:.05em;width:24px;height:24px}.brings li{padding-left:36px}
+/* Card body text one size down (page titles unchanged) */
+.inv-card p,.v2approach-col p,.area-copy p{font-size:15px;line-height:1.6}
