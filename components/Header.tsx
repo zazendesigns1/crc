@@ -44,6 +44,7 @@ export default function Header() {
   const closeRef = useRef<HTMLButtonElement>(null);
   const cRef = useRef<HTMLButtonElement>(null);
   const overHero = path === "/";
+  const hidden = path === "/unlock";
 
   useEffect(() => { setOpen(false); setContact(false); }, [path]);
   useEffect(() => {
@@ -58,6 +59,7 @@ export default function Header() {
   const isOn = (href: string) => (href === "/" ? path === "/" : path.startsWith(href) || (href === "/search" && path.startsWith("/listings")));
   const startConversation = () => { setOpen(false); setContact(true); };
 
+  if (hidden) return null;
   return (
     <>
       <header className={`hdr hdr3${overHero ? " hdr-hero" : ""}`}>
