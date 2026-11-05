@@ -16,8 +16,8 @@ export default function Home() {
       <section className="hero2">
         <div className="hero2-bg"><Image src="/hero-estate.webp" alt="Stone estate home with a horse grazing behind a split-rail fence" fill priority sizes="100vw" quality={88} style={{ objectFit: "cover", objectPosition: "72% 62%" }} /></div>
         <div className="wrap hero2-inner">
-          <h1 className="hero2-eyebrow">Capital District &amp; Southern Adirondack Real Estate</h1>
-          <p className="hero2-h">Know the land.<br /><em>Know the law.</em></p>
+          <p className="hero2-eyebrow">Charlotte Realty Group</p>
+          <h1 className="hero2-h">Capital District &amp;<br />Southern Adirondack <em>Real&nbsp;Estate</em></h1>
           <span className="hero2-rule" aria-hidden="true" />
           <p className="hero2-lede">Distinguished residences, equestrian estates, investment property and land, guided by three specialists.</p>
           <div className="hero2-ctas">

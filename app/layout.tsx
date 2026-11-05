@@ -5,7 +5,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: { default: "Charlotte Realty Group | Know the Land. Know the Law.", template: "%s | Charlotte Realty Group" },
+  title: { default: "Charlotte Realty Group | Capital District & Southern Adirondack Real Estate", template: "%s | Charlotte Realty Group" },
   description: "A three-person boutique brokerage for distinguished residences, equestrian estates, investment property and land across the Capital District and Southern Adirondacks.",
   icons: { icon: "/logo-mark.webp" },
 };

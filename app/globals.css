@@ -1180,3 +1180,6 @@ h1,h2,h3,.lede,.exp-head p,.section-head p,.agents-head p,.paths3-head p,.nextba
     linear-gradient(180deg,rgba(10,16,8,.72) 0%,rgba(10,16,8,.35) 150px,rgba(10,16,8,.2) 260px),
     linear-gradient(180deg,rgba(14,22,11,0) 25%,rgba(14,22,11,.6) 52%,rgba(14,22,11,.9) 100%)}}
 .hero2-inner{max-width:1180px}
+.hero2-h{font-size:clamp(2.1rem,3.9vw,3.4rem);line-height:1.08}
+.hero2-inner > .hero2-h{max-width:720px}
+@media (max-width:860px){.hero2-h{font-size:clamp(2rem,8.6vw,2.6rem)}}
