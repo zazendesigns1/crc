@@ -113,6 +113,13 @@ export default function Header() {
               </Link>
             ))}
           </nav>
+          <div className="menu-extra" style={{ transitionDelay: open ? `${120 + MENU.length * 60}ms` : "0ms" }}>
+            {[{ href: "/sell", label: "Sell your home" }, { href: "/investment", label: "Investment & transition" }].map((n) => (
+              <Link key={n.href} href={n.href} className={isOn(n.href) ? "on" : ""} tabIndex={open ? 0 : -1} onClick={() => setOpen(false)}>
+                {n.label} <span aria-hidden="true">→</span>
+              </Link>
+            ))}
+          </div>
           <div className="menu-foot">
             <span>Say hello: <a href={`mailto:${BROKERAGE.email}`} tabIndex={open ? 0 : -1}>{BROKERAGE.email}</a></span>
             <span><a href={BROKERAGE.phoneHref} tabIndex={open ? 0 : -1}>{BROKERAGE.phone}</a></span>

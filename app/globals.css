@@ -1244,3 +1244,13 @@ footer.site .foot-links{row-gap:14px}
 /* Consistent space below every sub-page title band */
 .page-head + section.band,.page-head + .band,.page-head + section{padding-top:72px!important}
 @media (max-width:700px){.page-head + section.band,.page-head + .band,.page-head + section{padding-top:44px!important}.band.approach-band{padding-bottom:44px!important}}
+
+/* Menu: secondary links (Sell, Investment) under the main list */
+.menu-extra{position:relative;display:flex;flex-wrap:wrap;gap:10px;width:min(720px,100%);margin:0 0 auto auto;padding:22px 0 0 90px;opacity:0;transform:translateY(16px);transition:opacity .45s ease,transform .45s ease}
+.menu-ov.open .menu-extra{opacity:1;transform:none}
+.menu-extra a{display:inline-flex;align-items:center;gap:10px;padding:12px 18px;border-radius:6px;border:1px solid rgba(201,169,97,.55);color:#fff;text-decoration:none!important;font-weight:500;font-size:1rem;transition:background .2s,border-color .2s,color .2s}
+.menu-extra a span{color:var(--gold);transition:transform .2s}
+.menu-extra a:hover,.menu-extra a.on{background:rgba(255,255,255,.08);border-color:var(--gold)}
+.menu-extra a:hover span{transform:translateX(3px)}
+@media (max-width:600px){.menu-extra{padding:18px 0 0 44px;gap:8px}.menu-extra a{padding:11px 14px;font-size:.95rem}}
+@media (prefers-reduced-motion: reduce){.menu-extra{transition:none}}
