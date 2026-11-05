@@ -39,8 +39,8 @@ export const AGENTS: Agent[] = [
     ],
     beyond: "[Michele's personal paragraph: her connection to the region, family, farm, or the land and lifestyle that define the area.]",
     highlights: ["30 years of real estate legal experience", "Founder of Charlotte Realty Group", "Distinguished residences, investment real estate, equestrian estates and land"],
-    phone: "(518) 245-6197",
-    phoneHref: "tel:+15182456197",
+    phone: "(518) 241-6887",
+    phoneHref: "tel:+15182416887",
     email: "michele@charlotterealtygroup.com",
   },
   {

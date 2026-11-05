@@ -12,7 +12,6 @@ const PEOPLE = "M9 11a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM2.5 20c0-3.6 2.9-6 6.
 
 export default function Footer() {
   const path = usePathname();
-  if (path === "/unlock") return null;
   return (
     <footer className="site">
       <div className="wrap foot">

@@ -43,10 +43,10 @@ export const BROKERAGE = {
   name: "Charlotte Realty Group",
   agent: "Michele, Broker",
   title: "Broker/Owner",
-  phone: "(518) 245-6197",
-  phoneHref: "tel:+15182456197",
+  phone: "(518) 241-6887",
+  phoneHref: "tel:+15182416887",
   email: "michele@charlotterealtygroup.com",
-  office: "[Office address], NY",
+  office: "49 West Main Street, Cambridge, NY",
   mlsName: "[Regional MLS]",
   dataUpdated: "Nov 1, 2026 8:00 AM",
 };
