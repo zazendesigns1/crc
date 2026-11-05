@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const CARDS = [
   { title: "Distinguished Residences", text: "Exceptional homes defined by character, craftsmanship and setting.", img: "/exp-residences.webp", href: "/search?type=House" },
-  { title: "Equestrian Estates", text: "Horse farms and equestrian facilities, represented by people who know the lifestyle.", img: "/exp-equestrian.webp", href: "/search?type=Farm" },
+  { title: "Equestrian Estates", text: "Horse farms and equestrian facilities, represented by people who know the lifestyle.", img: "/exp-equestrian-2.webp", href: "/search?type=Farm" },
   { title: "Investment Real Estate", text: "Multifamily and income-producing property for investors who value informed advice.", img: "/exp-investment.webp", href: "/search?type=Multi-family" },
   { title: "Land & Legacy Properties", text: "Expansive acreage, recreational land and rural estates with lasting potential.", img: "/exp-land.webp", href: "/search?type=Land" },
 ];

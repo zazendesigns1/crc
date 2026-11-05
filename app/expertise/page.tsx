@@ -7,7 +7,7 @@ export const metadata: Metadata = { title: "Areas of Expertise", description: "D
 
 const AREAS = [
   { title: "Distinguished Residences", img: "/exp-residences.webp", href: "/search?type=House", text: "Exceptional homes, luxury estates and properties defined by character, craftsmanship and setting. We help buyers look past the staging to what matters, and help sellers present a home the way it deserves." },
-  { title: "Equestrian Estates", img: "/exp-equestrian.webp", href: "/search?type=Farm", text: "Horse farms, training facilities and country properties, represented by people who understand the lifestyle: pasture and footing, fencing, barns, water, riding facilities and the realities of daily care." },
+  { title: "Equestrian Estates", img: "/exp-equestrian-2.webp", href: "/search?type=Farm", text: "Horse farms, training facilities and country properties, represented by people who understand the lifestyle: pasture and footing, fencing, barns, water, riding facilities and the realities of daily care." },
   { title: "Investment Real Estate", img: "/exp-investment.webp", href: "/search?type=Multi-family", text: "Multifamily properties, income-producing assets and strategic acquisitions, with an eye on title, ownership structure and the details that shape long-term value." },
   { title: "Land & Legacy Properties", img: "/exp-land.webp", href: "/search?type=Land", text: "Expansive acreage, recreational land and rural estates with lasting potential, including the questions buyers should ask about surveys, access, zoning and use before they commit." },
 ];
