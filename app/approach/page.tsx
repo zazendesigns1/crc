@@ -15,7 +15,7 @@ export default function Approach() {
         <p>We believe great real estate representation is built on three principles.</p>
       </div></div>
 
-      <section className="band"><div className="wrap"><ApproachCols /></div></section>
+      <section className="band approach-band"><div className="wrap"><ApproachCols /></div></section>
 
       <section className="band">
         <div className="wrap split">
