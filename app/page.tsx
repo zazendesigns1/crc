@@ -13,24 +13,20 @@ export default function Home() {
   const ours = all.filter((l) => l.ours);
   return (
     <>
-      <section className="hero">
-        <div className="bg"><Image src="/hero-estate.webp" alt="" fill priority sizes="100vw" style={{ objectFit: "cover", objectPosition: "80% 60%" }} /></div>
-        <div className="wrap">
-          <div className="hero-inner">
-            <div className="hero-title">
-              <h1 className="eyebrow">Capital District &amp; Southern Adirondack Real Estate</h1>
-            <p className="hero-h">Know the land.<br /><em>Know the law.</em></p>
-            </div>
-            <p className="lede">Distinguished residences, equestrian estates, investment property and land, guided by three specialists in law, land and how properties are built.</p>
-            <HeroSearch />
-            <div className="stats">
-              <div><b className="num">{all.filter((l) => l.status !== "Pending").length}</b>active listings</div>
-              <div><b className="num">{TOWNS.length}</b>towns covered</div>
-              <div><b className="num">{ours.length}</b>listed by CRG</div>
-            </div>
+      <section className="hero2">
+        <div className="hero2-bg"><Image src="/hero-estate.webp" alt="Stone estate home with a horse grazing behind a split-rail fence" fill priority sizes="100vw" quality={88} style={{ objectFit: "cover", objectPosition: "72% 62%" }} /></div>
+        <div className="wrap hero2-inner">
+          <h1 className="hero2-eyebrow">Capital District &amp; Southern Adirondack Real Estate</h1>
+          <p className="hero2-h">Know the land.<br /><em>Know the law.</em></p>
+          <span className="hero2-rule" aria-hidden="true" />
+          <p className="hero2-lede">Distinguished residences, equestrian estates, investment property and land, guided by three specialists.</p>
+          <div className="hero2-ctas">
+            <Link href="/search" className="hero2-btn solid">Explore properties <span aria-hidden="true">→</span></Link>
+            <Link href="/agents" className="hero2-btn ghost">Meet our team</Link>
           </div>
         </div>
       </section>
+      <div className="wrap hero2-search"><HeroSearch /></div>
 
       <ExpertiseCards />
 

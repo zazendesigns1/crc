@@ -47,7 +47,7 @@ export default function ScrollReveal() {
       for (const [sel, kind, stagger] of RULES) {
         const groups = new Map<Element | null, number>();
         document.querySelectorAll<HTMLElement>(sel).forEach((el) => {
-          if (el.closest(".hdr, .menu-ov, .contact-ov, .msg-dialog, .hero") || el.classList.contains("in")) return;
+          if (el.closest(".hdr, .menu-ov, .contact-ov, .msg-dialog, .hero, .hero2, .hero2-search") || el.classList.contains("in")) return;
           // Persistent elements (e.g. the footer) may carry data-reveal from a previous page: observe them again
           el.dataset.reveal = el.dataset.reveal || kind;
           if (stagger) {
