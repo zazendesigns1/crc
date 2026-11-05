@@ -36,13 +36,14 @@ export default function Investment() {
       <div className="page-head agents-head"><div className="wrap">
         <div className="eyebrow">Investment &amp; Transition Strategies</div>
         <h1>When one investment leads to the next.</h1>
-        <p>For many owners, selling a property is only the beginning of the next chapter. Whether you&apos;ve built a portfolio, held a multifamily property for decades or are ready to step back from active management, the decisions around a sale can have lasting effects.</p>
+        <p>For many owners, a sale is the start of the next chapter. Whether you&apos;re growing a portfolio or stepping back from management, the right strategy shapes what comes next.</p>
       </div></div>
 
       <section className="band">
         <div className="wrap inv-grid">
           {BLOCKS.map((b, i) => (
             <article key={b.title} className="inv-card">
+              <span className="area-check" aria-hidden="true" />
               <h2>{b.title}</h2>
               {b.body.map((p, j) => <p key={j}>{p}</p>)}
             </article>

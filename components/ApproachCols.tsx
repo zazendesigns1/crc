@@ -25,7 +25,7 @@ const ICONS: Record<string, ReactNode> = {
     </>
   ),
   // Home with a keyhole door: trusted, one-to-one representation
-  "Personal Representation": (
+  Service: (
     <>
       <path d="M5 22 24 6l19 16" />
       <path d="M10 18v23h28V18" />
@@ -37,15 +37,15 @@ const ICONS: Record<string, ReactNode> = {
 
 /* Flaticon PNGs, tinted with the brand color via CSS mask */
 const PNG: Record<string, string> = {
-  Experience: "/icons/briefcase.png",
-  Insight: "/icons/sold-sign.png",
-  "Personal Representation": "/icons/hands-home.png",
+  Experience: "/icons/sold-sign.png",
+  Insight: "/icons/briefcase.png",
+  Service: "/icons/rating.png",
 };
 
 const APPROACH = [
   { title: "Experience", text: "Three decades of real estate legal experience bring depth and perspective to every transaction." },
   { title: "Insight", text: "A clear understanding of the property, the market and what shapes ownership and value." },
-  { title: "Personal Representation", text: "A boutique approach built on relationships, responsiveness and your goals." },
+  { title: "Service", text: "A boutique approach built on relationships, responsiveness and your goals." },
 ];
 
 export default function ApproachCols() {

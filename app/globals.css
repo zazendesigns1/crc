@@ -1194,7 +1194,6 @@ footer.site p a,
 footer.site .foot-legal a,
 footer.site .foot-bottom a,
 main p a:not(.btn):not([class*="btn"]),
-main li a:not(.btn):not([class*="btn"]):not([class*="card"]),
 .prose a{
   text-decoration:underline dotted;
   text-decoration-thickness:1.5px;
@@ -1206,3 +1205,10 @@ main li a:not(.btn):not([class*="btn"]):not([class*="card"]),
   text-decoration:underline dotted;text-decoration-thickness:1.5px;text-underline-offset:7px;text-decoration-color:currentColor;
 }
 footer.site .foot-links{row-gap:14px}
+
+/* Never underline buttons or row-style links */
+.btn,[class*="btn"],.nextband-steps a,.nextband-steps a *,.exp-card,.arch,.path3,.card a{text-decoration:none!important}
+/* Investment checkmarks in brand green */
+.area-check{background:var(--forest)}
+/* Wider, shorter page-head intro */
+.page-head.agents-head p{max-width:760px}
