@@ -39,7 +39,7 @@ const ICONS: Record<string, ReactNode> = {
 const PNG: Record<string, string> = {
   Experience: "/icons/contract-sign.png",
   Insight: "/icons/home-search.png",
-  "Personal Representation": "/icons/hand-keys.png",
+  "Personal Representation": "/icons/hands-home.png",
 };
 
 const APPROACH = [

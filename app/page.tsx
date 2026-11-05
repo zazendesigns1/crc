@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       <section className="hero2">
-        <div className="hero2-bg"><Image src="/hero-estate.webp" alt="Stone estate home with a horse grazing behind a split-rail fence" fill priority sizes="100vw" quality={88} style={{ objectFit: "cover", objectPosition: "72% 62%" }} /></div>
+        <div className="hero2-bg"><Image src="/hero-estate-2.webp" alt="Stone estate home at sunset with a horse grazing behind a split-rail fence" fill priority sizes="100vw" quality={88} style={{ objectFit: "cover", objectPosition: "62% 58%" }} /></div>
         <div className="wrap hero2-inner">
           <p className="hero2-eyebrow">Charlotte Realty Group</p>
           <h1 className="hero2-h">Capital District &amp;<br />Southern Adirondack <em>Real&nbsp;Estate</em></h1>
