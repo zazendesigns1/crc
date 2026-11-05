@@ -1254,3 +1254,5 @@ footer.site .foot-links{row-gap:14px}
 .menu-extra a:hover span{transform:translateX(3px)}
 @media (max-width:600px){.menu-extra{padding:18px 0 0 44px;gap:8px}.menu-extra a{padding:11px 14px;font-size:.95rem}}
 @media (prefers-reduced-motion: reduce){.menu-extra{transition:none}}
+/* Mobile hero: shift photo so the horse is in frame */
+@media (max-width:860px){.hero2-bg img{object-position:90% 60%!important}}
