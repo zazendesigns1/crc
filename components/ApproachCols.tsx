@@ -38,7 +38,7 @@ const ICONS: Record<string, ReactNode> = {
 /* Flaticon PNGs, tinted with the brand color via CSS mask */
 const PNG: Record<string, string> = {
   Experience: "/icons/contract-sign.png",
-  Insight: "/icons/sale-sign.png",
+  Insight: "/icons/home-search.png",
   "Personal Representation": "/icons/hand-keys.png",
 };
 
