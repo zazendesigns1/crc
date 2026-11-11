@@ -29,8 +29,8 @@ export const AGENTS: Agent[] = [
     title: "Founder | Real Estate Broker",
     specialty: "30 years in real estate law",
     license: "NYS Lic. #10491200000",
-    photo: "/head-michele-hd.webp",
-    portrait: "/portrait-michele.webp",
+    photo: "/head-michele-real.webp",
+    portrait: "/portrait-michele-real.webp",
     bio: "Thirty years as a real estate attorney gives Michele a different perspective on every transaction.",
     headline: "A lifetime of real estate experience. A different perspective on every transaction.",
     story: [
@@ -50,8 +50,8 @@ export const AGENTS: Agent[] = [
     title: "Real Estate Salesperson",
     specialty: "Equestrian properties",
     license: "NYS Lic. #[number]",
-    photo: "/head-billy-hd.webp",
-    portrait: "/portrait-billy.webp",
+    photo: "/head-billy-real.webp",
+    portrait: "/portrait-billy-real.webp",
     bio: "An established local reputation and a lifelong connection to the equestrian community: horse properties, land and the rural lifestyle.",
     headline: "Local knowledge. A lifetime around horses.",
     story: [
